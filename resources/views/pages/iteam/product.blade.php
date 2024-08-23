@@ -9,9 +9,9 @@
             </span>
             <!-- <span class="view-more">Chi tiết</span> -->
             <div class="product-status">
-                <span> {!! $val->acreage ? '<i class="icon-acreage me-1"></i>'.$val->acreage.' - '.$val->acreage_max:'' !!} m<sup>2</sup></span>
-                <span> {!! $val->bedroom ? '<i class="icon-bed me-1"></i>'.$val->bedroom.' - '.$val->bedroom_max:'' !!} PN</span>
-                <span> {!! $val->wc ? '<i class="icon-bathroom me-1"></i>'.$val->wc.' - '.$val->wc_max:'' !!} WC</span>
+                <span> {!! $val->acreage ? '<i class="icon-acreage me-1"></i>'.$val->acreage.($val->acreage_max ? ' - '.$val->acreage_max : '').' m<sup>2</sup>' : '' !!}</span>
+                <span> {!! $val->bedroom ? '<i class="icon-bed me-1"></i>'.$val->bedroom.($val->bedroom_max ? ' - '.$val->bedroom_max : '').' PN' : '' !!}</span>
+                <span> {!! $val->wc ? '<i class="icon-bathroom me-1"></i>'.$val->wc.($val->wc_max ? ' - '.$val->wc_max : '').' WC' : '' !!}</span>
             </div>
         </a>
         <div class="card-body">
@@ -22,7 +22,7 @@
                 </div>
             </div>
             <div class="d-flex card-body-price">
-                <div class="card-price">Giá từ: <span class="current-price">{!! $val->price !!}{!! $val->price_max?' - '.$val->price_max:'' !!} {!! $val->unit !!}</span></div>  
+                <div class="card-price">Giá{{$val->price_max?' từ':''}}: <span class="current-price">{!! $val->price? $val->price:'Liên hệ' !!}{!! $val->price_max?' - '.$val->price_max:'' !!} {!! $val->price ? $val->unit:'' !!}</span></div>  
                 <div>{{ $val->total_product? 'Số căn: '.$val->total_product:'' }}</div>  
             </div>
         </div>
