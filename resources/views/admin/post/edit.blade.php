@@ -2,7 +2,7 @@
 @section('content')
 @include('admin.alert')
 <?php use App\Models\Images; use App\Models\Option; ?>
-<form id="autoSaveForm" method="POST" action="{{route('post.update', [$data->id])}}" enctype="multipart/form-data">
+<form id="" method="POST" action="{{route('post.update', [$data->id])}}" enctype="multipart/form-data">
 @csrf
 @method('PUT')
 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow fixed">
@@ -428,30 +428,5 @@
     }
 </script>
 
-<script>
-setInterval(function() {
-    var formData = new FormData($('#autoSaveForm')[0]); // Lấy dữ liệu từ form
-    $.ajax({
-        url: $('#autoSaveForm').attr('action'), // Lấy URL từ action của form
-        method: 'POST',
-        data: formData,
-        processData: false,
-        contentType: false,
-        success: function(response) {
-            // Hiển thị thông báo thành công mà không ảnh hưởng đến người dùng
-            let alertBox = $('<div class="alert alert-success" style="position: fixed; botton: 20px; right: 20px; z-index: 9999; height: 50px;">Đã tự động lưu!</div>');
-            $('body').append(alertBox);
-            setTimeout(function() {
-                alertBox.fadeOut('slow', function() {
-                    $(this).remove();
-                });
-            }, 2000); // Alert tự biến mất sau 2 giây
-        },
-        error: function(xhr, status, error) {
-            console.log('Lỗi:', error);
-            // Xử lý lỗi nếu cần
-        }
-    });
-}, 10000); // 10 giây (10000 milliseconds)
-</script>
+
 @endsection
