@@ -190,10 +190,10 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <img style="height: 100px; max-width: 100%" src="data/home/{{$data->img}}">
+                        <img style="height: 100px; max-width: 100%" src="data/images/{{$data->img}}">
                     </div>
                     <div class="col-md-6">
-                        <img style="height: 30px; max-width: 100%" src="data/home/{{$data->favicon}}">
+                        <img style="height: 30px; max-width: 100%" src="data/images/{{$data->favicon}}">
                     </div>
                 </div>
             </div>

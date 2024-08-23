@@ -22,7 +22,7 @@
                 @foreach($menu as $key => $val)
                 @if($key==2)
                 <li class="logo">
-                    <a class="navbar-brand" href="{{asset('')}}"><img src="assets/images/logo.png" alt="" class="mw-100"></a>
+                    <a class="navbar-brand" href="{{asset('')}}"><img src="data/images/{{$setting->img}}" alt="" class="mw-100"></a>
                 </li>
                 @else
                 <li class="nav-item">

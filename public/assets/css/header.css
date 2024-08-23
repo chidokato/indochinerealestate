@@ -317,5 +317,5 @@ header nav li.notification .message i {
 .navbar-brand{ margin:0 }
 li.logo{ width:200px; position:relative; }
 .navbar-expand-lg .navbar-collapse{ justify-content:center; }
-header .navbar-brand img{ background:#fff; padding:14px; border-radius:5px; position: absolute;left: 0;right: 0;margin-left: auto; margin-right: auto; margin-top:5px; border:1px solid #ddd; }
+header .navbar-brand img{ background:#fff; padding:8px; border-radius:5px; position: absolute;left: 0;right: 0;margin-left: auto; margin-right: auto; margin-top:5px; border:1px solid #ddd; }
 header .navbar-brand{ left:0; right:0; }
