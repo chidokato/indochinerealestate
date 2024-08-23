@@ -1,7 +1,7 @@
 <div class="col">
     <div class="card card-s card-s4">
         <a href="{{$val->category->slug}}/{{$val->slug}}">
-            <span><img src="assets/images/space-3.gif" class="card-img-top" style="background-image: url('data/images/{{$val->img}}');" alt="..."></span>
+            <span><img src="assets/images/space-3.gif" class="card-img-top" style="background-image: url('data/images/{{$val->img?$val->img:'no_image.jpg'}}');" alt="..."></span>
             <span class="cat">
                 {!! $val->monopoly?'<span class="room-status bg-red">Độc quyền</span>':'' !!}
                 <!-- {!! $val->for_sale?'<span class="room-status bg-red">Đang mở bán</span>':'' !!} -->
