@@ -40,7 +40,7 @@
                     <h3><span class="cover-title-filled text-main">DỰ ÁN TRỌNG ĐIỂM</span></h3>
                 </div>
                 <div class="cover-descip">
-                    <p>Những dự án mang dấu ấn VIETNAM HOMES, được phát triển kinh doanh và phân phối độc quyền bỏi VIETNAM HOMES</p>
+                    <p>Những dự án mang dấu ấn INDOCHINE, được phát triển kinh doanh và phân phối độc quyền bỏi INDOCHINE</p>
                 </div>
             </div>
         </div>
@@ -118,7 +118,7 @@
                     <h3><span class="cover-title-filled text-main">TIN TỨC</span></h3>
                 </div>
                 <div class="cover-descip">
-                    <p>Cập nhật những thông tin mới nhất từ VIETNAM HOMES và thị trường bất động sản</p>
+                    <p>Cập nhật những thông tin mới nhất từ INDOCHINE và thị trường bất động sản</p>
                 </div>
             </div>
         </div>
