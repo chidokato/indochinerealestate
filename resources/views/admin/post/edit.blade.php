@@ -17,14 +17,14 @@
             </a>
         </li>
         <li class="nav-item mobile-hide mr-2">
-            <button onclick="window.open('{{ url($data->category->slug . '/' . $data->slug) }}', '_blank');" type="reset" class="btn-danger  form-control"><i class="fas fa-eye"></i> View </button>
+            <button onclick="window.open('{{ url($data->category->slug . '/' . $data->slug) }}', '_blank');" type="reset" class="btn-info btn"><i class="fas fa-eye"></i> View </button>
         </li>
         <li class="nav-item mobile-hide">
-            <button type="reset" class="btn-danger mr-2 form-control"><i class="fas fa-sync"></i> Làm mới</button>
+            <button type="reset" class="btn-danger btn"><i class="fas fa-sync"></i> Làm mới</button>
         </li>
         <div class="topbar-divider d-none d-sm-block"></div>
         <li class="nav-item">
-            <button type="submit" class="btn-success form-control"><i class="far fa-save"></i> Lưu lại</button>
+            <button type="submit" class="btn-success btn"><i class="far fa-save"></i> Lưu lại</button>
         </li>
     </ul>
 </nav>
