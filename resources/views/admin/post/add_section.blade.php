@@ -12,13 +12,13 @@
                         <input name="stt[]" placeholder="..." type="text" class="form-control">
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-2">
                     <div class="form-group">
                         <label class="">Tab</label>
                         <input required name="tab[]" placeholder="..." type="text" class="form-control">
                     </div>
                 </div>
-                <div class="col-md-5">
+                <div class="col-md-4">
                     <div class="form-group">
                         <label class="">Heading</label>
                         <input name="heading[]" placeholder="..." type="text" class="form-control">
@@ -28,6 +28,16 @@
                     <div class="form-group">
                         <label class="">Hình ảnh</label>
                         <input multiple name="img_ss[]" placeholder="..." type="file" class="form-control">
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="form-group">
+                        <label class="">Tùy chọn</label>
+                        <select class="form-control" name="status[]">
+                            <option value="1">Kiểu 1</option>
+                            <option value="3">Mặt bằng</option>
+                            <option value="4">Căn hộ</option>
+                        </select>
                     </div>
                 </div>
                 <div class="col-md-12">

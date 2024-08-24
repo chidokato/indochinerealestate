@@ -285,9 +285,9 @@
                                 <select class="form-control" name="status[]">
                                     <!-- <option {{ $val->status==0? 'selected':'' }} value="0">Mặc định</option> -->
                                     <option {{ $val->status==1? 'selected':'' }} value="1">Kiểu 1</option>
-                                    <option {{ $val->status==2? 'selected':'' }} value="2">Kiểu 2</option>
+                                    <!-- <option {{ $val->status==2? 'selected':'' }} value="2">Kiểu 2</option> -->
                                     <option {{ $val->status==3? 'selected':'' }} value="3">Mặt bằng</option>
-                                    <option {{ $val->status==4? 'selected':'' }} value="4">Căn hộ</option>
+                                    <!-- <option {{ $val->status==4? 'selected':'' }} value="4">Căn hộ</option> -->
                                 </select>
                             </div>
                         </div>
