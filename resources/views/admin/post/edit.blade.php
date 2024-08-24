@@ -273,13 +273,13 @@
                                 <input name="heading-edit[]" value="{{$val->heading}}" placeholder="..." type="text" class="form-control">
                             </div>
                         </div>
-                        <div class="col-md-3" style="background:#dddddd82">
+                        <div class="col-md-3">
                             <div class="form-group">
                                 <label class="">Hình ảnh</label>
                                 <input multiple name="img_ss-edit{{$key}}[]" placeholder="..." type="file" class="form-control">
                             </div>
                         </div>
-                        <div class="col-md-2" style="background:#dddddd82">
+                        <div class="col-md-2">
                             <div class="form-group">
                                 <label class="">Tùy chọn</label>
                                 <select class="form-control" name="status[]">
