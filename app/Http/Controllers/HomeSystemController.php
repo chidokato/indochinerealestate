@@ -48,20 +48,22 @@ class HomeSystemController extends Controller
 
     public function filterPosts(Request $request)
     {
-        // dd($request->all());
         $categoryIds = $request->get('categories', []);
         $provinceIds = $request->get('provinces', []);
 
         $posts = Post::query()
-            ->when($categoryIds, function ($query, $categoryIds) {
-                $query->whereIn('category_id', $categoryIds);
+            ->when($categoryIds || $provinceIds, function ($query) use ($categoryIds, $provinceIds) {
+                if ($categoryIds) {
+                    $query->whereIn('category_id', $categoryIds);
+                }
+                if ($provinceIds) {
+                    $query->whereIn('province_id', $provinceIds);
+                }
             })
-            ->when($provinceIds, function ($query, $provinceIds) {
-                $query->whereIn('province_id', $provinceIds);
-            })
-            ->get();
+            ->orderBy('id', 'DESC')->get();
 
         return view('pages.iteam.loadproduct', compact('posts'))->render();
     }
+
    
 }

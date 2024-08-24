@@ -109,34 +109,35 @@
 <!-- jQuery CDN -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script type="text/javascript">
-    $(document).ready(function () {
-        $('.form-check-input').on('change', function () {
-            let categories = [];
-            let provinces = [];
+$(document).ready(function () {
+    $('.form-check-input').on('change', function () {
+        let categories = [];
+        let provinces = [];
 
-            // Get selected categories
-            $('input[name="categories[]"]:checked').each(function () {
-                categories.push($(this).val());
-            });
+        // Lấy danh sách category được chọn
+        $('input[name="categories[]"]:checked').each(function () {
+            categories.push($(this).val());
+        });
 
-            // Get selected provinces
-            $('input[name="provinces[]"]:checked').each(function () {
-                provinces.push($(this).val());
-            });
+        // Lấy danh sách province được chọn
+        $('input[name="provinces[]"]:checked').each(function () {
+            provinces.push($(this).val());
+        });
 
-            // Perform AJAX request
-            $.ajax({
-                url: "{{ route('posts.filter') }}",
-                type: 'GET',
-                data: {
-                    categories: categories,
-                    provinces: provinces
-                },
-                success: function (data) {
-                    $('#load-product').html(data);
-                }
-            });
+        // Gửi yêu cầu AJAX
+        $.ajax({
+            url: "{{ route('posts.filter') }}",
+            type: 'GET',
+            data: {
+                categories: categories,
+                provinces: provinces
+            },
+            success: function (data) {
+                $('#load-product').html(data);
+            }
         });
     });
+});
+
 </script>
 @endsection
