@@ -54,7 +54,7 @@
                 <div class="news-hightlight">
                     <div class="row">
                         <div class="col-md-12">
-                            @foreach($post as $key => $val)
+                            @foreach($posts as $key => $val)
                             @if($key < 3)
                             <div class="iteam">
                                 <a class="card-overlay outline-effect {{ $key>0 ? 'card-overlay-sm':'' }} " href="{{$val->category->slug}}/{{$val->slug}}">
@@ -77,7 +77,7 @@
                 </div>
                 
                 <div class="row row-cols-1 g-4 horizontal-view" id="show-setting">
-                    @foreach($post as $key => $val)
+                    @foreach($posts as $key => $val)
                     @if($key > 2)
                     <div class="col">
                         <div class="card card-s card-s4">
@@ -114,7 +114,7 @@
                 
                 <div class="widget widget-list widget-news mb-3">
                     <h4><span>Tin xem nhiều</span></h4>
-                    @foreach($post as $key => $val)
+                    @foreach($posts as $key => $val)
                     @if($key == 0)
                     <a href="{{$val->category->slug}}/{{$val->slug}}" class="news-item-captain">
                         <div class="news-item-captain-img">

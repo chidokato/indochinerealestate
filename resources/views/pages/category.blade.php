@@ -39,29 +39,26 @@
                 <div class="widget widget-list widget-hightlight mb-3">
                     <h4><span>Loại hình</span></h4>
                     @foreach($cats as $val)
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="{{$val->id}}" id="flexCheck{{$val->id}}">
-                        <label class="form-check-label" for="flexCheck{{$val->id}}">
-                            {{$val->name}}
-                        </label>
-                    </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="categories[]" value="{{$val->id}}" id="flexCheck{{$val->id}}">
+                            <label class="form-check-label aa22" for="flexCheck{{$val->id}}">
+                                <span>{{$val->name}}</span> <span>({{ count($val->Post) }})</span>
+                            </label>
+                        </div>
                     @endforeach
                     <hr>
-
                     <h4><span>Tình thành</span></h4>
                     @foreach($provinces as $val)
-                    @if(count($val->Post) > 0)
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="{{$val->id}}" id="flexCheck{{$val->id}}">
-                        <label class="form-check-label aa22" for="flexCheck{{$val->id}}">
-                            <span>{{$val->name}}</span> <span>({{ count($val->Post) }})</span>
-                        </label>
-                    </div>
-                    @endif
+                        @if(count($val->Post) > 0)
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="provinces[]" value="{{$val->id}}" id="flexCheck{{$val->id}}">
+                            <label class="form-check-label aa22" for="flexCheck{{$val->id}}">
+                                <span>{{$val->name}}</span> <span>({{ count($val->Post) }})</span>
+                            </label>
+                        </div>
+                        @endif
                     @endforeach
-                 
                 </div>
-
             </div>
             <div class="col-lg-9">
                 <nav aria-label="breadcrumb">
@@ -76,7 +73,7 @@
                     <div class="iteam"><a href="">Vietnam Homes phân phối độc quyền</a></div>
                 </div>
                 <div class="sort-box">
-                    <span>có <span class="text-main font-weight-semibold">{{ count($post) }}</span> sản phẩm</span>
+                    <span>có <span class="text-main font-weight-semibold">{{ count($posts) }}</span> sản phẩm</span>
                     <div class="sort-ct">
                         <div class="dropdown">
                             <a class="btn ripple-effect dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
@@ -90,10 +87,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="row row-cols-3 row-cols-md-3 g-4 " id="">
-                    @foreach($post as $key => $val)
-                        @include('pages.iteam.product')
-                    @endforeach
+                <div class="row row-cols-3 row-cols-md-3 g-4 " id="load-product">
+                    @include('pages.iteam.loadproduct')
                 </div>
                 <div class="load-more text-center mt-4 pt-2">
                     <div class="cta-btn ir">
@@ -111,5 +106,37 @@
 
 
 @section('js')
+<!-- jQuery CDN -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.form-check-input').on('change', function () {
+            let categories = [];
+            let provinces = [];
 
+            // Get selected categories
+            $('input[name="categories[]"]:checked').each(function () {
+                categories.push($(this).val());
+            });
+
+            // Get selected provinces
+            $('input[name="provinces[]"]:checked').each(function () {
+                provinces.push($(this).val());
+            });
+
+            // Perform AJAX request
+            $.ajax({
+                url: "{{ route('posts.filter') }}",
+                type: 'GET',
+                data: {
+                    categories: categories,
+                    provinces: provinces
+                },
+                success: function (data) {
+                    $('#load-product').html(data);
+                }
+            });
+        });
+    });
+</script>
 @endsection

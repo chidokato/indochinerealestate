@@ -8,10 +8,21 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Auth;
 
+use App\Models\Menu;
+use App\Models\Category;
+use App\Models\Post;
+use App\Models\Section;
+use App\Models\Images;
+use App\Models\Setting;
+use App\Models\Slider;
 use App\Models\Customer;
+use App\Models\Cart;
+use App\Models\Order;
+use App\Models\User;
+use App\Models\Province;
 use Mail;
-
-// $locale = App::currentLocale();
+use Image;
+use File;
 
 class HomeSystemController extends Controller
 {
@@ -32,6 +43,25 @@ class HomeSystemController extends Controller
         $Customer->content = $request->content;
         $Customer->save();
         return redirect()->route('home')->with('success','Gửi thành công');
+    }
+
+
+    public function filterPosts(Request $request)
+    {
+        // dd($request->all());
+        $categoryIds = $request->get('categories', []);
+        $provinceIds = $request->get('provinces', []);
+
+        $posts = Post::query()
+            ->when($categoryIds, function ($query, $categoryIds) {
+                $query->whereIn('category_id', $categoryIds);
+            })
+            ->when($provinceIds, function ($query, $provinceIds) {
+                $query->whereIn('province_id', $provinceIds);
+            })
+            ->get();
+
+        return view('pages.iteam.loadproduct', compact('posts'))->render();
     }
    
 }

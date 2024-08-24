@@ -74,20 +74,20 @@ class HomeController extends Controller
             if ($data->sort_by == 'Product') {
                 $cats = Category::where('sort_by','Product')->where('parent','>',0)->get();
                 $provinces = Province::get();
-                $post = Post::whereIn('category_id', $cat_array)->orderBy('id', 'DESC')->paginate(30);
+                $posts = Post::whereIn('category_id', $cat_array)->orderBy('id', 'DESC')->paginate(30);
 
                 return view('pages.category', compact(
                     'data',
                     'cats',
                     'provinces',
-                    'post',
+                    'posts',
                 ));
             }
             if ($data->sort_by == 'News') {
-                $post = Post::whereIn('category_id', $cat_array)->orderBy('id', 'DESC')->paginate(30);
+                $posts = Post::whereIn('category_id', $cat_array)->orderBy('id', 'DESC')->paginate(30);
                 return view('pages.news', compact(
                     'data',
-                    'post',
+                    'posts',
                 ));
             }
         }
@@ -97,9 +97,13 @@ class HomeController extends Controller
 
     public function province($slug)
     {
+        $cats = Category::where('sort_by','Product')->where('parent','>',0)->get();
+        $provinces = Province::get();
         $data = Province::where('slug', $slug)->first();
         $post = Post::where('province_id', $data->id)->orderBy('id', 'DESC')->paginate(30);
         return view('pages.category', compact(
+            'cats',
+            'provinces',
             'data',
             'post',
         ));
@@ -124,6 +128,10 @@ class HomeController extends Controller
         }
         
     }
+
+
+    
+
 
     
 

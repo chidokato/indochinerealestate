@@ -112,11 +112,12 @@ Route::middleware(['auth'])->group(function () {
 
 // home view
 Route::get('/', [HomeController::class, 'index'])->name('home');
-Route::get('search', [HomeController::class, 'search'])->name('search');
+// Route::get('search', [HomeController::class, 'search'])->name('search');
 
 // home system
 Route::get('sendmail', [HomeSystemController::class, 'sendmail'])->name('sendmail');
 Route::post('question', [HomeSystemController::class, 'question'])->name('question');
+Route::get('seach/filter/posts', [HomeSystemController::class, 'filterPosts'])->name('posts.filter');
 
 // add to cart
 Route::prefix('product')->group(function () {
@@ -140,14 +141,11 @@ Route::prefix('account')->group(function () {
     Route::get('order/{id}', [HomeController::class, 'account_order_dital'])->name('account_order_dital');
 });
 
-// knot
-Route::get('knot/clik_body/{id}', [HomeController::class, 'clik_body'])->name('clik_body');
-Route::get('knot/clik_strap/{id}', [HomeController::class, 'clik_strap'])->name('clik_strap');
-Route::get('knot/clik_buckle/{id}', [HomeController::class, 'clik_buckle'])->name('clik_buckle');
 
 
 Route::get('custom-knot', [HomeController::class, 'customknot'])->name('customknot');
 Route::get('location/{slug}', [HomeController::class, 'province']);
 Route::get('{slug}', [HomeController::class, 'category']);
 Route::get('{catslug}/{slug}', [HomeController::class, 'post']);
+
 
