@@ -171,7 +171,7 @@ class PostController extends Controller
                 $section->tab = $tab;
                 $section->heading = $data['heading'][$key];
                 $section->content = $data['content'][$key];
-                $section->status = 0;
+                $section->status = 1;
                 $section->save();
 
                 if($request->hasFile('img_ss'.$key.'')){
@@ -340,7 +340,7 @@ class PostController extends Controller
                 $section->tab = $tab;
                 $section->heading = $data['heading'][$key];
                 $section->content = $data['content'][$key];
-                $section->status = 0;
+                $section->status = 1;
                 $section->save();
 
                 if($request->hasFile('img_ss'.$key.'')){
