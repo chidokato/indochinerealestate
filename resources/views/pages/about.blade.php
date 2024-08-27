@@ -170,7 +170,7 @@
 <section class="section9">
     <div class="container">
         <h2>BAN LÃNH ĐẠO</h2>
-        <div class="row">
+        <div class="row" style="background:url(assets/images/gioithieu/bg_lanhdao1.png); background-size: cover;">
             <div class="col-md-1"></div>
             <div class="col-md-5">
                 <div class="timeline">
@@ -201,6 +201,45 @@
                     <div class="function"> CHỦ TỊCH <br> VIETNAM HOMES GROUP </div>
                 </div>
             </div>
+        </div>
+        <div class="row haianh" style="background:url(assets/images/gioithieu/bg_lanhdao2.png); background-size: cover;">
+            <div class="col-md-2"></div>
+            <div class="col-md-4">
+                <div class="info">
+                    <div class="img"> <img src="assets/images/gioithieu/HaiAnh.png"> </div>
+                    <div class="name">ÔNG NGUYỄN HẢI ANH</div>
+                    <div class="function"> TỔNG GIÁM ĐỐC <br> VIETNAM HOMES GROUP </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="timeline ">
+                    <div class="timeline-entry">
+                        <div class="timeline-time">2013 - 2021</div>
+                        <div class="timeline-content">
+                            <p>BỘ NÔNG NGHIỆP & PHÁT TRIỂN NÔNG THÔN</p>
+                        </div>
+                    </div>
+                    <div class="timeline-entry">
+                        <div class="timeline-time">2021 - 2022</div>
+                        <div class="timeline-content">
+                            <p>Trưởng phòng kinh doanh - ĐẤT XANH MIỀN BẮC</p>
+                        </div>
+                    </div>
+                    <div class="timeline-entry">
+                        <div class="timeline-time">2022 - Nay</div>
+                        <div class="timeline-content">
+                            <p>Giám đốc kinh doanh <br> Công ty Cổ Phần Bất Động Sản Indochine </p>
+                        </div>
+                    </div>
+                    <div class="timeline-entry">
+                        <div class="timeline-time">2024 - Nay</div>
+                        <div class="timeline-content">
+                            <p>Tổng giám đốc Công Ty Cổ Phân VietNam Homes Group </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
         </div>
     </div>
 </section>

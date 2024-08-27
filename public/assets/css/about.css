@@ -103,7 +103,9 @@
 .section9 .img img{ height: 300px; }
 .section9 .info{ display:flex;  flex-direction: column; align-items: center;}
 .section9 .name{ font-size:1.4rem; font-weight:bold; color:var(--sub-color); margin-bottom:15px }
-.section9 .function{ font-size:1rem; color:#fff; text-align:center; }
+.section9 .function{ font-size:.8rem; color:#fff; text-align:center; }
+.haianh .timeline-content{ padding-bottom:70px !important }
+.haianh{ margin-top:50px }
 
 
 
