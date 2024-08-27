@@ -12,7 +12,7 @@ $().ready(function() {
             "passwordagain":{ equalTo: "#password", },
             "sku":{ required: true, equalTo: "#sku", },
             "area":{ number: true, },
-            "price":{ number: true, },
+            // "price":{ number: true, },
             "number":{ number: true, },
             "bedroom":{ number: true, },
             "category_id":{ required: true, },
@@ -49,7 +49,7 @@ $().ready(function() {
                 equalTo: "Mã xác nhận không đúng",
             },
             "area": { number: "Nhập số 88 / 8.8", },
-            "price": { number: "Nhập số 88 / 8.8", },
+            // "price": { number: "Nhập số 88 / 8.8", },
             "number": { number: "Nhập số 88 / 8.8",},
             "bedroom": {
                 number: "Nhập số 88 / 8.8",
