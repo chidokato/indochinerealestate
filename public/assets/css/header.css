@@ -320,6 +320,6 @@ li.logo{ width:200px; position:relative; }
 header .navbar-brand img{ background:#fff; padding:8px 20px; border-radius:5px; position: absolute;left: 0;right: 0;margin-left: auto; margin-right: auto; margin-top:5px; border:1px solid #ddd; }
 header .navbar-brand{ left:0; right:0; }
 
-.icon-header img{ height:35px }
+.icon-header img{ height:30px }
 .navbar-nav .nav-item{ width:150px; display: flex; align-items: center; justify-content: space-evenly; }
 .navbar-nav .nav-item .icon-header{ display:flex; justify-content: space-evenly; width:100% }
