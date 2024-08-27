@@ -73,7 +73,7 @@
                                     
                                 </td>
                                 <td><div class="slug">{{$val->slug}}</div></td>
-                                <td>{{$val->price}} 
+                                <td>{{ $val->price ? number_format($val->price) : ''}} 
                                     <div class="slug" style="color:red">{{$val->sale?'sale: '.$val->sale.'%':''}}</div>
                                 </td>
                                 <td>{{$val->category_id ? $val->category->name : ''}}</td>

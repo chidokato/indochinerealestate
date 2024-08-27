@@ -94,8 +94,8 @@
                                 <div class="input-group-append">
                                     <span class="input-group-text" id="basic-addon2">đ</span>
                                 </div>
-                                <input value="{{number_format($data->price, 0, ',', '.')}}" type="text" name="price" class="form-control price-input" placeholder="Từ (mặc định)">
-                                <input value="{{number_format($data->price_max, 0, ',', '.')}}" type="text" name="price_max" class="form-control price-input" placeholder="Đến">
+                                <input value="{{$data->price?number_format($data->price):''}}" type="text" name="price" class="form-control price-input" placeholder="Từ (mặc định)">
+                                <input value="{{$data->price_max?number_format($data->price_max:'')}}" type="text" name="price_max" class="form-control price-input" placeholder="Đến">
                             </div>
                         </div>
                     </div>
