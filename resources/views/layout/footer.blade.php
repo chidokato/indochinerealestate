@@ -8,21 +8,21 @@
                     <div class="ft-contact-item">
                         <div class="ft-contact-item-text">
                             <h6>HOTLINE TƯ VẤN</h6>
-                            <span><a href="tel:0919511881">0868.023.799</a></span>
+                            <span><a href="tel:0919511881">{{$setting->hotline}}</a></span>
                         </div>
                         <span class="ft-contact-item-ico"><i class="icon-phone-filled"></i></span>
                     </div>
                     <div class="ft-contact-item">
                         <div class="ft-contact-item-text">
                             <h6>Email</h6>
-                            <span><a href="mailto:info@vietnamhomesgroup.com.vn" class="">info@indochinerealestate.vn</a></span>
+                            <span><a href="mailto:info@vietnamhomesgroup.com.vn" class="">{{$setting->email}}</a></span>
                         </div>
                         <span class="ft-contact-item-ico"><i class="icon-mail-filled"></i></span>
                     </div>
                     <div class="ft-contact-item">
                         <div class="ft-contact-item-text">
                             <h6>ĐỊA CHỈ VĂN PHÒNG</h6>
-                            <span>Số 21 Cầu Cốc, Phường Tây Mỗ, Quận Nam Từ Liêm, Hà Nội</span>
+                            <span>{{$setting->address}}</span>
                         </div>
                         <span class="ft-contact-item-ico"><i class="icon-building-filled"></i></span>
                     </div>
