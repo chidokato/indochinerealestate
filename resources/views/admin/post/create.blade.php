@@ -52,16 +52,44 @@
                             </select>
                         </div>
                     </div>
+                    <!-- <div class="row">
+                        <label class="col-sm-2 col-form-label">Giá bán</label>
+                        <div class="col-sm-5">
+                            <div class="form-group row">
+                                <div class="col-sm-12">
+                                    <div class="input-group">
+                                        <input class="form-control" name="price" type="text" placeholder="Từ (mặc định)">
+                                        <select class="form-control" name="unit">
+                                            <option value="Tỷ">Tỷ</option>
+                                            <option value="Triệu">Triệu</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-5">
+                            <div class="form-group row">
+                                <div class="col-sm-12">
+                                    <div class="input-group">
+                                        <input class="form-control" name="price_max" type="text" placeholder="Đến">
+                                        <select class="form-control" name="unit_max">
+                                            <option value="Tỷ">Tỷ</option>
+                                            <option value="Triệu">Triệu</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label">Giá bán</label>
                         <div class="col-sm-10">
                             <div class="input-group">
-                                <select class="form-control" name="unit">
-                                    <option value="Tỷ">Tỷ</option>
-                                    <option value="Triệu">Triệu</option>
-                                </select>
-                                <input type="text" name="price" class="form-control" placeholder="Từ (mặc định)">
-                                <input type="text" name="price_max" class="form-control" placeholder="Đến">
+                                <div class="input-group-append">
+                                    <span class="input-group-text" id="basic-addon2">đ</span>
+                                </div>
+                                <input type="text" name="price" class="form-control price-input" placeholder="Từ (mặc định)">
+                                <input type="text" name="price_max" class="form-control price-input" placeholder="Đến">
                             </div>
                         </div>
                     </div>
@@ -322,5 +350,17 @@
         }
     }
 ?>
+
+<script type="text/javascript">
+document.querySelectorAll('.price-input').forEach(function (input) {
+    input.addEventListener('input', function (e) {
+        let value = e.target.value.replace(/\D/g, ''); // Loại bỏ ký tự không phải số
+        value = new Intl.NumberFormat('vi-VN').format(value); // Định dạng số theo kiểu Việt Nam
+        e.target.value = value;
+    });
+});
+
+
+</script>
 
 @endsection

@@ -136,6 +136,7 @@ label.error{
     right: 15px;
     font-size: 0.8rem;
     text-align: right;
+    z-index: 1;
 }
 
 .select2-container--default .select2-selection--single {

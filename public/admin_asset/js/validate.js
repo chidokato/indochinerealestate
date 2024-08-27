@@ -18,6 +18,8 @@ $().ready(function() {
             "category_id":{ required: true, },
             "tab[]":{ required: true, maxlength: 50, minlength: 3, },
             "tab-edit[]":{ required: true, maxlength: 50, minlength: 3, },
+            "province":{ required: true, },
+            "district":{ required: true, },
         },
         messages: {
             "name": {
@@ -46,15 +48,9 @@ $().ready(function() {
                 required: "Nhập mã xác nhận",
                 equalTo: "Mã xác nhận không đúng",
             },
-            "area": {
-                number: "Nhập số 88 / 8.8",
-            },
-            "price": {
-                number: "Nhập số 88 / 8.8",
-            },
-            "number": {
-                number: "Nhập số 88 / 8.8",
-            },
+            "area": { number: "Nhập số 88 / 8.8", },
+            "price": { number: "Nhập số 88 / 8.8", },
+            "number": { number: "Nhập số 88 / 8.8",},
             "bedroom": {
                 number: "Nhập số 88 / 8.8",
             },
@@ -71,6 +67,8 @@ $().ready(function() {
                 maxlength: "Nhập ít hơn 50 ký tự",
                 minlength: "Nhập nhiều hơn 3 ký tự",
             },
+            "province": { required: "Bắt buộc phải nhập ...", },
+            "district": { required: "Bắt buộc phải nhập ...", },
         }
     });
 });

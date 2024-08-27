@@ -2,7 +2,7 @@
 @section('content')
 @include('admin.alert')
 <?php use App\Models\Images; use App\Models\Option; ?>
-<form id="" method="POST" action="{{route('post.update', [$data->id])}}" enctype="multipart/form-data">
+<form id="validateForm" method="POST" action="{{route('post.update', [$data->id])}}" enctype="multipart/form-data">
 @csrf
 @method('PUT')
 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow fixed">
@@ -57,19 +57,49 @@
                             </select>
                         </div>
                     </div>
+                    <!-- <div class="row">
+                        <label class="col-sm-2 col-form-label">Giá bán</label>
+                        <div class="col-sm-5">
+                            <div class="form-group row">
+                                <div class="col-sm-12">
+                                    <div class="input-group">
+                                        <input value="{{$data->price}}" class="form-control" name="price" type="text" placeholder="Từ (mặc định)">
+                                        <select class="form-control" name="unit">
+                                            <option {{$data->unit=='Tỷ' ? 'selected':''}} value="Tỷ">Tỷ</option>
+                                            <option {{$data->unit=='Triệu' ? 'selected':''}} value="Triệu">Triệu</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-5">
+                            <div class="form-group row">
+                                <div class="col-sm-12">
+                                    <div class="input-group">
+                                        <input value="{{$data->price_max}}" class="form-control" name="price_max" type="text" placeholder="Đến">
+                                        <select class="form-control" name="unit_max">
+                                            <option {{$data->unit_max=='Tỷ' ? 'selected':''}} value="Tỷ">Tỷ</option>
+                                            <option {{$data->unit_max=='Triệu' ? 'selected':''}} value="Triệu">Triệu</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label">Giá bán</label>
                         <div class="col-sm-10">
                             <div class="input-group">
-                                <select class="form-control" name="unit">
-                                    <option value="Tỷ">Tỷ</option>
-                                    <option value="Triệu">Triệu</option>
-                                </select>
-                                <input value="{{$data->price}}" type="text" name="price" class="form-control" placeholder="Từ (mặc định)">
-                                <input value="{{$data->price_max}}" type="text" name="price_max" class="form-control" placeholder="Đến">
+                                <div class="input-group-append">
+                                    <span class="input-group-text" id="basic-addon2">đ</span>
+                                </div>
+                                <input value="{{number_format($data->price, 0, ',', '.')}}" type="text" name="price" class="form-control price-input" placeholder="Từ (mặc định)">
+                                <input value="{{number_format($data->price_max, 0, ',', '.')}}" type="text" name="price_max" class="form-control price-input" placeholder="Đến">
                             </div>
                         </div>
                     </div>
+                    
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label">Diện tích</label>
                         <div class="col-sm-10">
@@ -425,11 +455,18 @@
         e.parentElement.remove();
     }
 
-    function loadMap() {
-        var mapEmbedCode = document.getElementById('maps').value;
-        document.getElementById('load_maps').innerHTML = mapEmbedCode;
-    }
 </script>
 
+<script type="text/javascript">
+document.querySelectorAll('.price-input').forEach(function (input) {
+    input.addEventListener('input', function (e) {
+        let value = e.target.value.replace(/\D/g, ''); // Loại bỏ ký tự không phải số
+        value = new Intl.NumberFormat('vi-VN').format(value); // Định dạng số theo kiểu Việt Nam
+        e.target.value = value;
+    });
+});
+
+
+</script>
 
 @endsection

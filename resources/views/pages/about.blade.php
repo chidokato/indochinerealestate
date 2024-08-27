@@ -98,19 +98,18 @@
 <section class="section6 bg">
     <div class="container" id="tamnhin">
         <div class="row">
-            <div class="col-7">
-               <div class="img"><img src="assets/images/gioithieu/tam-nhin.png"></div>
-            </div>
-            <div class="col-5">
-                <div class="content">
-                    <div class="title">
-                        <img src="assets/images/gioithieu/tam-nhin-1.png">
-                        <h3>TẦM NHÌN</h3>
+            <div class="col-1"></div>
+            <div class="col-11">
+                <div class="iteam">
+                    <div class="img"><img src="assets/images/gioithieu/bg_sumenh.png"></div>
+                    <div class="text">
+                        <img class="icon" src="assets/images/gioithieu/icon_su menh.png">
+                        <p>Cung cấp sản phẩm dịch vụ ưu việt, nâng cao chất lượng cuộc sống, gia tăng giá trị cho khách hàng</p>
+                        <p>Mang đến dịch vụ chuyên nghiệp và giải pháp hoàng hảo</p>
+                        <p>Tuân theo những chuẩn mực cao nhất về đạo đức trong kinh doanh và trách nhiệm xã hội, tạo niềm tự hào về một thương hiệu INDOCHINE Thành công</p>
                     </div>
-                    <p>Trở thành đơn vị phân phối, cho thuê và quản lý các sản phẩm bất động sản năng động, linh hoạt tại Việt Nam & Quốc tế.</p>
-                    <p>Trở thành đơn vị đi đầu trong “chuyển đổi số” và tạo ra các giá trị vượt trội.</p>
-                    <p>Là đơn vị phát triển và phân phối bất động sản được lựa chọn hàng đầu Việt Nam.</p>
                 </div>
+               
             </div>
         </div>
     </div>
