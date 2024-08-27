@@ -67,8 +67,8 @@
                 <div class="right">
                     <div class="price"> <span style="font-size: 1.2rem;">
                         Giá: <span class="current-price">
-                            {{$val->price >= 1000000000?$val->price/1000000000 . ' Tỷ': ($val->price? $val->price/1000000 . ' Triệu':'Liên hệ') }}
-                            {{$val->price_max >= 1000000000? ' - ' . $val->price_max/1000000000 . ' Tỷ':($val->price_max?' - ' . $val->price_max/1000000 . ' Triệu':'')}}
+                            {{$post->price >= 1000000000?$post->price/1000000000 . ' Tỷ': ($post->price? $post->price/1000000 . ' Triệu':'Liên hệ') }}
+                            {{$post->price_max >= 1000000000? ' - ' . $post->price_max/1000000000 . ' Tỷ':($post->price_max?' - ' . $post->price_max/1000000 . ' Triệu':'')}}
                         </span>
                     <div class="price_acreage">
                         @if($post->unit=='Tỷ')
