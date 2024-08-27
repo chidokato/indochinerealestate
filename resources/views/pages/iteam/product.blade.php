@@ -28,8 +28,13 @@
                 </div>
             </div>
             <div class="d-flex card-body-price">
-                <div class="card-price">Giá{{$val->price_max?' từ':''}}: <span class="current-price">{!! $val->price? $val->price:'Liên hệ' !!}{!! $val->price_max?' - '.$val->price_max:'' !!} {!! $val->price ? $val->unit:'' !!}</span></div>  
-                <div>{{ $val->total_product? 'Số căn: '.$val->total_product:'' }}</div>  
+                <div class="card-price">
+                    Giá: <span class="current-price">
+                        {{$val->price >= 1000000000?$val->price/1000000000 . ' Tỷ':$val->price/1000000 . ' Triệu'}}
+                        {{$val->price_max >= 1000000000? ' - ' . $val->price_max/1000000000 . ' Tỷ':' - ' . $val->price_max/1000000 . ' Triệu'}}
+                    </span>
+                </div>  
+                <div>{{ $val->total_product? 'Số căn: '.$val->total_product:'' }}</div>
             </div>
         </div>
     </div>
