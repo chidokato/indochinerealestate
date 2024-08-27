@@ -21,7 +21,7 @@
                     <span class="text-truncate-set text-truncate-set-1">
                         {{$val->address}}
                         {{ $val->street_id ? ($val->address?', ':'').$val->Street->name:'' }}
-                        {{$val->ward_id? ', '.$val->Ward->name:''}}
+                        <!-- {{$val->ward_id? ', '.$val->Ward->name:''}} -->
                         {{$val->district_id? ', '.$val->District->name : '' }}
                         {{$val->province_id? ', '.$val->Province->name : ''}}
                     </span>
