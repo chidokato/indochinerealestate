@@ -66,7 +66,7 @@
                 </div>
                 <div class="right">
                     <div class="price"> <span style="font-size: 1.2rem;">
-                        Giá: <span class="current-price">
+                        Giá: <span>
                             {{$post->price >= 1000000000?$post->price/1000000000 . ' Tỷ': ($post->price? $post->price/1000000 . ' Triệu':'Liên hệ') }}
                             {{$post->price_max >= 1000000000? ' - ' . $post->price_max/1000000000 . ' Tỷ':($post->price_max?' - ' . $post->price_max/1000000 . ' Triệu':'')}}
                         </span>
