@@ -40,7 +40,7 @@
                     <h3><span class="cover-title-filled text-main">DỰ ÁN TRỌNG ĐIỂM</span></h3>
                 </div>
                 <div class="cover-descip">
-                    <p>Những dự án mang dấu ấn INDOCHINE, được phát triển kinh doanh và phân phối độc quyền bỏi INDOCHINE</p>
+                    <p>Những dự án mang dấu ấn INDOCHINE, được phát triển kinh doanh và phân phối độc quyền bởi INDOCHINE</p>
                 </div>
             </div>
         </div>
