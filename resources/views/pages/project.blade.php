@@ -65,9 +65,11 @@
                     <div class="address"><i class="icon-location me-1"></i> {{$post->address}}{{ $post->street_id ? ', '.$post->Street->name:'' }}{{$post->ward_id? ', '.$post->Ward->name:''}}{{', '.$post->District->name}}{{', '.$post->Province->name}} <a href="">Xem trên bản đồ</a></div>
                 </div>
                 <div class="right">
-                    <div class="price"> <span style="font-size: 1.2rem;">Giá: </span>
-                        {{$post->price}} {{$post->price_max ? ' - '.$post->price_max:''}} {{$post->price ? $post->unit: 'Liện hệ'}}
-                    </div>
+                    <div class="price"> <span style="font-size: 1.2rem;">
+                        Giá: <span class="current-price">
+                            {{$val->price >= 1000000000?$val->price/1000000000 . ' Tỷ': ($val->price? $val->price/1000000 . ' Triệu':'Liên hệ') }}
+                            {{$val->price_max >= 1000000000? ' - ' . $val->price_max/1000000000 . ' Tỷ':($val->price_max?' - ' . $val->price_max/1000000 . ' Triệu':'')}}
+                        </span>
                     <div class="price_acreage">
                         @if($post->unit=='Tỷ')
                         {{ $post->acreage ? number_format($post->price*1000000000/$post->acreage/1000000, 2) : '...'}} triệu/m<sup>2</sup>
