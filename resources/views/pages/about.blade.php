@@ -196,7 +196,7 @@
             </div>
             <div class="col-md-4">
                 <div class="info">
-                    <div class="img"> <img src="assets/images/gioithieu/chihang.png"> </div>
+                    <div class="img"> <img src="assets/images/gioithieu/C-Hang.png"> </div>
                     <div class="name">BÀ LÊ THỊ HẰNG</div>
                     <div class="function"> CHỦ TỊCH <br> VIETNAM HOMES GROUP </div>
                 </div>
@@ -206,7 +206,7 @@
             <div class="col-md-2"></div>
             <div class="col-md-4">
                 <div class="info">
-                    <div class="img"> <img src="assets/images/gioithieu/HaiAnh.png"> </div>
+                    <div class="img"> <img src="assets/images/gioithieu/hai-anh.png"> </div>
                     <div class="name">ÔNG NGUYỄN HẢI ANH</div>
                     <div class="function"> TỔNG GIÁM ĐỐC <br> VIETNAM HOMES GROUP </div>
                 </div>
