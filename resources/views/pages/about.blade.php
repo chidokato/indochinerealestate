@@ -115,12 +115,73 @@
     </div>
 </section>
 
+<section class="section7">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="img"> <img src="assets/images/icon_muctieu.png"> </div>
+                <h2>MỤC TIÊU CHIẾN LƯỢC</h2>
+                <p>Trong 5 năm tới, trở thành đơn vị hàng đầu tại Việt Nam trong các lĩnh vực đầu tư, kinh doanh, phân phối và cho thuê bất động sản</p>
+                <p>Tiếp tục hoàn chỉnh và chuyên nghiệp hóa dịch vụ, tạo ra các giá trị tốt nhất và phù hợp nhất</p>
+                <p>Kinh doanh dịch vụ sẽ là mảng dinh doanh mũi nhọn đưa Indochine thâm nhập thị trường quốc tế</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section8">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>DỊCH VỤ BẤT ĐỘNG SẢN TOÀN DIỆN</h2>
+                <h3>ONE-TOP REAL ESTATE SERVICE</h3>
+
+                <div class="swiper mySwiper1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide iteam1">
+                            <h3>V-DEVELOPMENT</h3>
+                            <p>PHÁT TRIỂN KINH DOANH DỰ ÁN BẤT ĐỘNG SẢN</p>
+                        </div>
+                        <div class="swiper-slide iteam2">
+                            <h3>V-DEVELOPMENT</h3>
+                            <p>PHÁT TRIỂN KINH DOANH DỰ ÁN BẤT ĐỘNG SẢN</p>
+                        </div>
+                        <div class="swiper-slide iteam3">
+                            <h3>V-DEVELOPMENT</h3>
+                            <p>PHÁT TRIỂN KINH DOANH DỰ ÁN BẤT ĐỘNG SẢN</p>
+                        </div>
+                        <div class="swiper-slide iteam4">
+                            <h3>V-DEVELOPMENT</h3>
+                            <p>PHÁT TRIỂN KINH DOANH DỰ ÁN BẤT ĐỘNG SẢN</p>
+                        </div>
+                        <div class="swiper-slide iteam5">
+                            <h3>V-DEVELOPMENT</h3>
+                            <p>PHÁT TRIỂN KINH DOANH DỰ ÁN BẤT ĐỘNG SẢN</p>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
 @endsection
 
 @section('js')
 <script>
     var swiper = new Swiper(".mySwiper", {
         slidesPerView: 6,
+        spaceBetween: 30,
+        pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        },
+    });
+
+    var swiper = new Swiper(".mySwiper1", {
+        slidesPerView: 5,
         spaceBetween: 30,
         pagination: {
         el: ".swiper-pagination",
