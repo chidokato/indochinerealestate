@@ -115,12 +115,8 @@ class PostController extends Controller
         $post->slug = Str::slug($data['name'], '-');
         $post->category_id = $data['category_id'];
         
-        // $post->unit = $data['unit'];
-        // if($data['unit']=='Tỷ'){$post->price = $data['price']*1000000000;}elseif($data['unit']=='Triệu'){$post->price = $data['price']*1000000;}
-        // $post->unit_max = $data['unit_max'];
-        // if($data['unit_max']=='Tỷ'){$post->price_max = $data['price_max']*1000000000;}elseif($data['unit_max']=='Triệu'){$post->price_max = $data['price_max']*1000000;}
-        $post->price = $data['price'];
-        $post->price_max = $data['price_max'];
+        $post->price = str_replace('.', '', $data['price']);
+        $post->price_max = str_replace('.', '', $data['price_max']);
         $post->acreage = $data['acreage'];
         $post->acreage_max = $data['acreage_max'];
         $post->bedroom = $data['bedroom'];
@@ -255,12 +251,8 @@ class PostController extends Controller
         $post->content = $data['content0'];
         $post->category_id = $data['category_id'];
         
-        // $post->unit = $data['unit'];
-        // if($data['unit']=='Tỷ'){$post->price = $data['price']*1000000000;}elseif($data['unit']=='Triệu'){$post->price = $data['price']*1000000;}
-        // $post->unit_max = $data['unit_max'];
-        // if($data['unit_max']=='Tỷ'){$post->price_max = $data['price_max']*1000000000;}elseif($data['unit_max']=='Triệu'){$post->price_max = $data['price_max']*1000000;}
-        $post->price = $data['price'];
-        $post->price_max = $data['price_max'];
+        $post->price = str_replace('.', '', $data['price']);
+        $post->price_max = str_replace('.', '', $data['price_max']);
         $post->acreage = $data['acreage'];
         $post->acreage_max = $data['acreage_max'];
         $post->bedroom = $data['bedroom'];
