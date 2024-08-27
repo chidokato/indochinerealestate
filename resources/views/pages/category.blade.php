@@ -63,14 +63,14 @@
             <div class="col-lg-9">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Vietnam Homes</a></li>
+                    <li class="breadcrumb-item"><a href="#">Indochine</a></li>
                     <li class="breadcrumb-item active" aria-current="page">{{$data->name}}</li>
                     </ol>
                 </nav>
                 <h1 class="text-uppercase title-cat">Các dự án bất động sản trên toàn quốc</h1>
                 <div class="option-cat">
                     <div class="iteam"><a href="">Đang mở bán</a></div>
-                    <div class="iteam"><a href="">Vietnam Homes phân phối độc quyền</a></div>
+                    <div class="iteam"><a href="">Indochine phân phối độc quyền</a></div>
                 </div>
                 <div class="sort-box">
                     <span>có <span class="text-main font-weight-semibold">{{ count($posts) }}</span> sản phẩm</span>

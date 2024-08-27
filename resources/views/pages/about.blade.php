@@ -41,10 +41,9 @@
             </div>
             <div class="col-8">
                 <div class="content">
-                    <p><strong>Công ty Cổ phần INDOCHINE</strong> được phát triển từ Đội ngũ Ban Lãnh Đạo cấp cao của Công Ty Cổ Phần Bất Động Sản INDOCHINE - một trong những “hắc mã cừ khôi” của thị trường bất động sản </p>
-                    <p>Thành lập từ năm 2019, trải qua hàng loạt thách thức của thị trường, INDOCHINE đang ngày một hoàn thiện và trưởng thành hơn từ những khó khăn và nỗ lực vươn lên trở thành đơn vị tiên phong trong lĩnh vực bất động sản đồng thời đặt mục tiêu trở thành một Tập đoàn đa ngành nghề.</p>
-                    <p>Giai đoạn đầu thành lập, INDOCHINE gặp không ít khó khăn, thử thách cả về nguồn lực tài chính và nhân sự. Bên cạnh đó, đối mặt với thị trường đang trong thời kỳ khủng hoảng, áp lực mà INDOCHINE gặp phải càng tăng lên gấp bội. Tuy nhiên, những nỗ lực ban đầu đã giúp INDOCHINE đặt dấu ấn đậm nét tại dự án bất động sản hot, góp phần phá băng thị trường bất động sản giai đoạn khó khăn, hình thành nên những xu hướng đầu tư và mua nhà ở mới của khách hàng trong nước và quốc tế, xứng đáng là đơn vị tiên phong dẫn dắt thị trường.</p>
-                    <p>Từ đó đến nay, với chiến lược đúng đắn, linh hoạt và sát thực tế của đội ngũ ban lãnh đạo tài năng, hàng loạt các hoạt động thúc đẩy doanh số được triển khai, quy mô rộng khắp, bài bản đã đưa INDOCHINE vươn lên mạnh mẽ, trở thành một trong những doanh nghiệp bất động sản hàng đầu trên thị trường. Đến nay, INDOCHINE tự hào là đơn vị được các chủ đầu tư lớn tin tưởng “chọn mặt gửi vàng” đảm nhiệm vai trò đơn vị phát triển cũng như phân phối độc quyền dự án. Đồng thời, để có thể mang lại nhiều lợi ích hơn nữa cho Quý Chủ đầu tư, Quý Nhà đầu tư cũng như Quý Khách hàng, INDOCHINE cũng đưa vào vận hành mảng Quản lý & Khai thác Căn hộ dịch vụ, mảng Du lịch lữ hành gắn liền với bất động sản, mảng Quản lý & kí gửi cho thuê bất động sản. Đặc biệt, INDOCHINE Group cũng tự hào là một trong những đơn vị tiên phong cung cấp dịch vụ bất động sản toàn diện cho khách hàng quốc tế, mang bất động sản Việt Nam vươn tầm thế giới.</p>
+                    <p>Được thành lập từ đam mê, kiến tạo bởi khát vọng, đắp xây bởi nhiệt huyết, Công Ty Cổ Phần Bất Động Sản INDOCHINE đang vươn lên trở thành một trong những đơn vị bất động sản hàng đầu Việt Nam.</p>
+                    <p>Năm 2022, thị trường bất động sản trải qua "cơn bĩ cực" chưa từng có khiến hàng trăm doanh nghiệp địa ốc đóng cửa, giải thể, thu hẹp quy mô. Nhạy bén trước thời cơ, biến cơ hội thành thách thức để vươn lên, INDOCHINE chính thức chào sân thị trường bằng lễ ra mắt hoành tráng, đánh dấu cho sự ra đời của một "ngôi sao mới". Thực lực được khẳng định bằng thực tích, chỉ trong một thời gian ngắn, INDOCHINE đã khiến toàn thị trường "rúng động" với hàng trăm giao dịch thành công, tiên phong "phá băng" thị trường bất động sản trong giai đoạn bấy giờ. Được đà tiến lên, INDOCHINE tiếp tục phát triển vượt bậc, xứng danh "hắc mã" trên thị trường bất động sản.</p>
+                    <p>Đặc biệt, INDOCHINE cũng tự hào là một trong những đơn vị đầu tiên đưa bất động sản Việt Nam lên vũ đài thế giới, tiên phong cung cấp dịch vụ bất động sản toàn diện cho khách hàng quốc tế mong muốn an cư - đầu tư tại Việt Nam. Bằng năng lực, nhiệt huyết, sự chuyên nghiệp và am hiểu thị trường, INDOCHINE hứa hẹn sẽ là cầu nối đáng tin cậy, mang lại cho quý khách hàng, quý nhà đầu tư những bất động sản vượt trội có giá trị và tính thanh khoản cao.</p>
                 </div>
             </div>
         </div>
@@ -106,7 +105,7 @@
                         <img class="icon" src="assets/images/gioithieu/icon_su menh.png">
                         <p>Cung cấp sản phẩm dịch vụ ưu việt, nâng cao chất lượng cuộc sống, gia tăng giá trị cho khách hàng</p>
                         <p>Mang đến dịch vụ chuyên nghiệp và giải pháp hoàng hảo</p>
-                        <p>Tuân theo những chuẩn mực cao nhất về đạo đức trong kinh doanh và trách nhiệm xã hội, tạo niềm tự hào về một thương hiệu INDOCHINE Thành công</p>
+                        <p>Tuân theo những chuẩn mực cao nhất về đạo đức trong kinh doanh và trách nhiệm xã hội, tạo niềm tự hào về một thương hiệu bất động sản Thành công</p>
                     </div>
                 </div>
                
@@ -134,28 +133,28 @@
         <div class="row">
             <div class="col-12">
                 <h2>DỊCH VỤ BẤT ĐỘNG SẢN TOÀN DIỆN</h2>
-                <h3>ONE-TOP REAL ESTATE SERVICE</h3>
+                <h3>ONE-STOP REAL ESTATE SERVICE</h3>
 
                 <div class="swiper mySwiper1">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide iteam1">
-                            <h4>V-DEVELOPMENT</h4>
+                            <h4>DEVELOPMENT</h4>
                             <p>PHÁT TRIỂN KINH DOANH DỰ ÁN BẤT ĐỘNG SẢN</p>
                         </div>
                         <div class="swiper-slide iteam2">
-                            <h4>V-CONSULTING</h4>
+                            <h4>CONSULTING</h4>
                             <p>TƯ VẤN CHIẾN LƯỢC THƯƠNG HIỆU & MARKETING DỰ ÁN BẤT ĐỘNG SẢN</p>
                         </div>
                         <div class="swiper-slide iteam3">
-                            <h4>V-PROPERTY</h4>
+                            <h4>PROPERTY</h4>
                             <p>PHÂN PHỐI & CHO THUÊ DỰ ÁN BẤT ĐỘNG SẢN</p>
                         </div>
                         <div class="swiper-slide iteam4">
-                            <h4>V-HOSPITALITY</h4>
+                            <h4>HOSPITALITY</h4>
                             <p>QUẢN LÝ VẬN HÀNH & KHAI THÁC BẤT ĐỘNG SẢN</p>
                         </div>
                         <div class="swiper-slide iteam5">
-                            <h4>V-GLOBAL</h4>
+                            <h4>GLOBAL</h4>
                             <p>DỊCH VỤ BẤT ĐỘNG SẢN TOÀN DIỆN CHO KHÁCH HÀNG NƯỚC NGOÀI</p>
                         </div>
                     </div>
@@ -198,7 +197,7 @@
                 <div class="info">
                     <div class="img"> <img src="assets/images/gioithieu/C-Hang.png"> </div>
                     <div class="name">BÀ LÊ THỊ HẰNG</div>
-                    <div class="function"> CHỦ TỊCH <br> VIETNAM HOMES GROUP </div>
+                    <div class="function"> Tổng Giám Đốc <br> Công ty Cổ phần BĐS INDOCHINE </div>
                 </div>
             </div>
         </div>
@@ -208,7 +207,7 @@
                 <div class="info">
                     <div class="img"> <img src="assets/images/gioithieu/hai-anh.png"> </div>
                     <div class="name">ÔNG NGUYỄN HẢI ANH</div>
-                    <div class="function"> TỔNG GIÁM ĐỐC <br> VIETNAM HOMES GROUP </div>
+                    <div class="function"> Giám Đốc Kinh Doanh <br> Công ty Cổ phần BĐS INDOCHINE </div>
                 </div>
             </div>
             <div class="col-md-5">
@@ -229,12 +228,6 @@
                         <div class="timeline-time">2022 - Nay</div>
                         <div class="timeline-content">
                             <p>Giám đốc kinh doanh <br> Công ty Cổ Phần Bất Động Sản Indochine </p>
-                        </div>
-                    </div>
-                    <div class="timeline-entry">
-                        <div class="timeline-time">2024 - Nay</div>
-                        <div class="timeline-content">
-                            <p>Tổng giám đốc Công Ty Cổ Phân VietNam Homes Group </p>
                         </div>
                     </div>
                 </div>
