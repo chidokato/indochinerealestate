@@ -100,12 +100,12 @@ class HomeController extends Controller
         $cats = Category::where('sort_by','Product')->where('parent','>',0)->get();
         $provinces = Province::get();
         $data = Province::where('slug', $slug)->first();
-        $post = Post::where('province_id', $data->id)->orderBy('id', 'DESC')->paginate(30);
+        $posts = Post::where('province_id', $data->id)->orderBy('id', 'DESC')->paginate(30);
         return view('pages.category', compact(
             'cats',
             'provinces',
             'data',
-            'post',
+            'posts',
         ));
     }
 
