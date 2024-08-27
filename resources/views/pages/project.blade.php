@@ -65,11 +65,10 @@
                     <div class="address"><i class="icon-location me-1"></i> {{$post->address}}{{ $post->street_id ? ', '.$post->Street->name:'' }}{{$post->ward_id? ', '.$post->Ward->name:''}}{{', '.$post->District->name}}{{', '.$post->Province->name}} <a href="">Xem trên bản đồ</a></div>
                 </div>
                 <div class="right">
-                    <div class="price"> <span style="font-size: 1.2rem;">
-                        Giá: <span>
-                            {{$post->price >= 1000000000?$post->price/1000000000 . ' Tỷ': ($post->price? $post->price/1000000 . ' Triệu':'Liên hệ') }}
-                            {{$post->price_max >= 1000000000? ' - ' . $post->price_max/1000000000 . ' Tỷ':($post->price_max?' - ' . $post->price_max/1000000 . ' Triệu':'')}}
-                        </span>
+                    <div class="price"> <span style="font-size: 1.2rem;">Giá: </span>
+                        {{$post->price >= 1000000000?$post->price/1000000000 . ' Tỷ': ($post->price? $post->price/1000000 . ' Triệu':'Liên hệ') }}
+                        {{$post->price_max >= 1000000000? ' - ' . $post->price_max/1000000000 . ' Tỷ':($post->price_max?' - ' . $post->price_max/1000000 . ' Triệu':'')}}
+                    </div>
                     <div class="price_acreage">
                         @if($post->unit=='Tỷ')
                         {{ $post->acreage ? number_format($post->price*1000000000/$post->acreage/1000000, 2) : '...'}} triệu/m<sup>2</sup>
