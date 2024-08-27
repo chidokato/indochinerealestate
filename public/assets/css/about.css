@@ -47,7 +47,7 @@
 .section6 .iteam .text{ position:absolute; top:35px; left:70px; width: 60%; }
 .section6 .iteam .icon{ width:70px; margin-bottom:20px }
 
-.section7{ background:#870819; padding:40px 0px; color:#fff; text-align:center; position:relative; }
+.section7{ background:#870819; padding:50px 0px; color:#fff; text-align:center; position:relative; }
 .section7::before {
     content: '';
     position: absolute;
@@ -71,17 +71,49 @@
 .section8 h3{ font-size:1.2rem; font-weight:bold; margin-bottom:30px }
 .section8 .mySwiper1 .swiper-slide{
 	background-size: cover;
-	width: 100%;
-	text-align: center; padding: 100px 20px; color: #fff;
+	height: 380px;
+	text-align: center; color: #fff;
+	display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0px 20px;
 }
-.section8 .mySwiper1 .swiper-slide h3{
-	margin-bottom: 50px;
-}
+.section8 .mySwiper1 .swiper-slide h4{ font-size:1.2rem; font-weight:bold; }
+.section8 .mySwiper1 .swiper-slide p{ height:90px }
 .iteam1{ background: url('../images/gioithieu/dichvu_1.png') no-repeat center center; }
+.iteam1:hover{ background: url('../images/gioithieu/dichvu_1-1.png') no-repeat center center; }
 .iteam2{ background: url('../images/gioithieu/dichvu_2.png') no-repeat center center; }
+.iteam2:hover{ background: url('../images/gioithieu/dichvu_2-2.png') no-repeat center center; }
 .iteam3{ background: url('../images/gioithieu/dichvu_3.png') no-repeat center center; }
+.iteam3:hover{ background: url('../images/gioithieu/dichvu_3-3.png') no-repeat center center; }
 .iteam4{ background: url('../images/gioithieu/dichvu_4.png') no-repeat center center; }
+.iteam4:hover{ background: url('../images/gioithieu/dichvu_4-4.png') no-repeat center center; }
 .iteam5{ background: url('../images/gioithieu/dichvu_5.png') no-repeat center center; }
+.iteam5:hover{ background: url('../images/gioithieu/dichvu_5-5.png') no-repeat center center; }
+
+.section9{ background:#870819; padding:40px 0px; color:#fff }
+.section9 H2{ font-size:1.4rem; color:#fff; text-align:center; font-weight:bold; margin-bottom:30px }
+.timeline{ padding-left:150px }
+.timeline .timeline-entry p{ margin-bottom:0px }
+.timeline .timeline-entry{ border-left:1px #fff dashed; padding-left:20px; position:relative; }
+.timeline .timeline-entry:last-child{ border:none }
+.timeline .timeline-entry:after{ content:''; position:absolute; width:20px; height:20px; background:#fff; border-radius:100%; top:0; left:-11px; border: solid 5px #915858a8; }
+.timeline .timeline-entry .timeline-time{ position:absolute; top:0; left:-110px; text-align: right; width: 90px; }
+.timeline .timeline-entry .timeline-content{ padding-bottom:100px }
+.section9 .img img{ height: 300px; }
+.section9 .info{ display:flex;  flex-direction: column; align-items: center;}
+.section9 .name{ font-size:1.4rem; font-weight:bold; color:var(--sub-color); margin-bottom:15px }
+.section9 .function{ font-size:1rem; color:#fff; text-align:center; }
+
+
+
+
+
+
+
+
+
+
 
 @media (min-width: 992px) {
 	

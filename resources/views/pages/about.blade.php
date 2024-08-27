@@ -139,29 +139,67 @@
                 <div class="swiper mySwiper1">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide iteam1">
-                            <h3>V-DEVELOPMENT</h3>
+                            <h4>V-DEVELOPMENT</h4>
                             <p>PHÁT TRIỂN KINH DOANH DỰ ÁN BẤT ĐỘNG SẢN</p>
                         </div>
                         <div class="swiper-slide iteam2">
-                            <h3>V-DEVELOPMENT</h3>
-                            <p>PHÁT TRIỂN KINH DOANH DỰ ÁN BẤT ĐỘNG SẢN</p>
+                            <h4>V-CONSULTING</h4>
+                            <p>TƯ VẤN CHIẾN LƯỢC THƯƠNG HIỆU & MARKETING DỰ ÁN BẤT ĐỘNG SẢN</p>
                         </div>
                         <div class="swiper-slide iteam3">
-                            <h3>V-DEVELOPMENT</h3>
-                            <p>PHÁT TRIỂN KINH DOANH DỰ ÁN BẤT ĐỘNG SẢN</p>
+                            <h4>V-PROPERTY</h4>
+                            <p>PHÂN PHỐI & CHO THUÊ DỰ ÁN BẤT ĐỘNG SẢN</p>
                         </div>
                         <div class="swiper-slide iteam4">
-                            <h3>V-DEVELOPMENT</h3>
-                            <p>PHÁT TRIỂN KINH DOANH DỰ ÁN BẤT ĐỘNG SẢN</p>
+                            <h4>V-HOSPITALITY</h4>
+                            <p>QUẢN LÝ VẬN HÀNH & KHAI THÁC BẤT ĐỘNG SẢN</p>
                         </div>
                         <div class="swiper-slide iteam5">
-                            <h3>V-DEVELOPMENT</h3>
-                            <p>PHÁT TRIỂN KINH DOANH DỰ ÁN BẤT ĐỘNG SẢN</p>
+                            <h4>V-GLOBAL</h4>
+                            <p>DỊCH VỤ BẤT ĐỘNG SẢN TOÀN DIỆN CHO KHÁCH HÀNG NƯỚC NGOÀI</p>
                         </div>
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
 
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section9">
+    <div class="container">
+        <h2>BAN LÃNH ĐẠO</h2>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                <div class="timeline">
+                    <div class="timeline-entry">
+                        <div class="timeline-time">2006 - 2020</div>
+                        <div class="timeline-content">
+                            <p>Đảm nhiệm vị trí lãnh đạo cấp cao tại các tập đoàn bất động sản hàng đầu Việt Nam như: Novaland, FLC Group, Datxanh Group, Đất Xanh Miền Bắc,...</p>
+                        </div>
+                    </div>
+                    <div class="timeline-entry">
+                        <div class="timeline-time">Năm 2021</div>
+                        <div class="timeline-content">
+                            <p>Sáng lập thương hiệu Vietnam Homes Group</p>
+                        </div>
+                    </div>
+                    <div class="timeline-entry">
+                        <div class="timeline-time">Năm 2022</div>
+                        <div class="timeline-content">
+                            <p>Sáng lập thương hiệu Bất Động Sản INDOCHINE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="info">
+                    <div class="img"> <img src="assets/images/gioithieu/chihang.png"> </div>
+                    <div class="name">BÀ LÊ THỊ HẰNG</div>
+                    <div class="function"> CHỦ TỊCH <br> VIETNAM HOMES GROUP </div>
+                </div>
             </div>
         </div>
     </div>
