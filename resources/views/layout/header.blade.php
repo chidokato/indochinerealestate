@@ -32,8 +32,8 @@
                 @endforeach
                 <li class="nav-item">
                     <div class="icon-header">
-                        <a href="{{$setting->facebook}}"><img src="assets/images/facebook-logo-icon.png"></a>
-                        <a href="{{$setting->youtube}}"><img src="assets/images/youtube-logo-icon.png"></a>
+                        <a target="_blank" href="{{$setting->facebook}}"><img src="assets/images/facebook-logo-icon.png"></a>
+                        <a target="_blank" href="{{$setting->youtube}}"><img src="assets/images/youtube-logo-icon.png"></a>
                     </div>
                 </li>
                 <!-- <li class="nav-item">
