@@ -63,7 +63,7 @@
             <div class="col-lg-9">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Indochine</a></li>
+                    <li class="breadcrumb-item"><a href="{{asset('')}}">Indochine</a></li>
                     <li class="breadcrumb-item active" aria-current="page">{{$data->name}}</li>
                     </ol>
                 </nav>

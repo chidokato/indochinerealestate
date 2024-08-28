@@ -49,8 +49,8 @@
         <div class="col-md-12">
             <nav aria-label="breadcrumb" class="main-breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Indochine</a></li>
-                    <li class="breadcrumb-item"><a href="{{$post->category->slug}}/{{$post->slug}}">{{$post->name}}</a></li>
+                    <li class="breadcrumb-item"><a href="{{asset('')}}">Indochine</a></li>
+                    <li class="breadcrumb-item"><a href="{{$post->category->slug}}">{{$post->category->name}}</a></li>
                     <li class="breadcrumb-item active" aria-current="page">{{$post->name}}</li>
                 </ol>
                 <div class="sub">
