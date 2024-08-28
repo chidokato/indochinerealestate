@@ -371,8 +371,8 @@
     .hero-search-wrap .row button {width:48px;white-space: nowrap;color: rgb(224 120 28 / 100%);overflow: hidden;margin-left: 0 !important;}
     .hero-search-wrap .row button i {color:#fff;padding-right: 0;margin: 0 !important;}
     .hero-search-wrap .row .input-group span input, .hero-search-wrap .row .input-group-text {font-size: 14px;}
-    .sec-hero .swiper-navigator {right:24px; bottom:0}
-    .sec-hero .swiper-pagination .swiper-pagination-current {font-size:48px}
+    .sec-hero .swiper-navigator {right:20px; bottom:-24px}
+    .sec-hero .swiper-pagination .swiper-pagination-current {font-size:34px}
 
     .main-ads-slider .container {width:52px;height:52px;margin: auto;bottom: 12px;}
 }
