@@ -15,7 +15,7 @@ use App\Models\Slider;
 
 class SliderController extends Controller
 {
-    function saveImage($file, $path = 'data/images/', $maxWidth = 1500, $maxHeight = 1500) {
+    function saveImage($file, $path = 'data/images/', $maxWidth = 2024, $maxHeight = 2024) {
         $originalFilename = $file->getClientOriginalName();
         $filenameWithoutExtension = Str::slug(pathinfo($originalFilename, PATHINFO_FILENAME), '-');
         $extension = $file->getClientOriginalExtension();
