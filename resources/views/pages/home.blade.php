@@ -15,11 +15,11 @@
 <section class="sec-hero">
     <div class="hero-slider">
         <div class="swiper">
-            @foreach($slider as $val)
             <div class="swiper-wrapper">
+                @foreach($slider as $val)
                 <div class="swiper-slide"><span style='background-image: url("data/images/{{$val->img}}")' class="w-100 thumb"></span></div>
+                @endforeach
             </div>
-            @endforeach
             <div class="swiper-navigator">
                 <div class="swiper-pagination"></div>
                 <div class="swiper-navigator-btn">
@@ -167,6 +167,26 @@
 
 @section('js')
 <script>
+    var swiper8 = new Swiper(".hero-slider .swiper", {
+        spaceBetween: 0,
+        effect: "fade",
+        lazy: true,
+        loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".hero-slider .swiper-pagination",
+            type: "fraction",
+        },
+        navigation: {
+            nextEl: ".hero-slider .swiper-button-next",
+            prevEl: ".hero-slider .swiper-button-prev",
+        },
+    });
+
+
     var swiper = new Swiper(".mySwiper", {
         slidesPerView: 4,
         spaceBetween: 30,
