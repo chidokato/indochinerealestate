@@ -222,4 +222,10 @@
         }
     }
 ?>
+
+<script>
+    function delete_row(e) {
+        e.parentElement.remove();
+    }
+</script>
 @endsection

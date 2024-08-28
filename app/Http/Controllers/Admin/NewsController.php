@@ -138,9 +138,11 @@ class NewsController extends Controller
     {
         $category = Category::where('sort_by', 'News')->get();
         $data = Post::find($id);
+        $images = Images::where('post_id', $data->id)->get();
         return view('admin.news.edit')->with(compact(
             'category',
             'data',
+            'images',
         ));
     }
 
@@ -172,6 +174,21 @@ class NewsController extends Controller
             $filename = $this->saveImage($file);
             $post->img = $filename;
         }
+
+        if($request->hasFile('imgdetail')){
+            foreach ($request->file('imgdetail') as $file) {
+                if(isset($file)){
+                    $Images = new Images();
+                    $Images->post_id = $post->id;
+                    // $filename = saveImage($file); // Gọi hàm saveImage từ helper
+                    $filename = $this->saveImage($file);
+                    $Images->img = $filename;
+                    $Images->name = $filename;
+                    $Images->save();
+                }
+            }
+        }
+        
         $post->save();
 
         return redirect()->back()->with('Success','Success');
