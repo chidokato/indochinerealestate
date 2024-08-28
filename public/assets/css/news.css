@@ -28,3 +28,5 @@
 .news-detail img{ max-width:100%; height:auto !important; }
 .news-detail figure{ text-align:center; }
 .news-detail figure figcaption{ font-size:.9rem; font-style:italic; }
+.all-images .img{ margin-bottom:20px }
+.all-images .img img{ border-radius:10px }

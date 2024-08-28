@@ -36,6 +36,11 @@
                         {!! $post->detail !!}
                     </div>
                     {!! $post->content !!}
+                    <div class="row all-images">
+                        @foreach($post->Images as $val)
+                        <div class="col-lg-6 img"><img src="data/images/{{$val->img}}"></div>
+                        @endforeach
+                    </div>
                 </div>
                 
             </div>
