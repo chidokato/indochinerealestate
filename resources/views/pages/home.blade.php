@@ -15,9 +15,11 @@
 <section class="sec-hero">
     <div class="hero-slider">
         <div class="swiper">
+            @foreach($slider as $val)
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><span style='background-image: url("assets/images/capital.jpg")' class="w-100 thumb"></span></div>
+                <div class="swiper-slide"><span style='background-image: url("data/images/{{$val->img}}")' class="w-100 thumb"></span></div>
             </div>
+            @endforeach
             <div class="swiper-navigator">
                 <div class="swiper-pagination"></div>
                 <div class="swiper-navigator-btn">
