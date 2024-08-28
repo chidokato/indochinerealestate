@@ -42,7 +42,7 @@
 @media (max-width: 414px) {
     .toggle-menu ~ .navbar-collapse .collapse{ left:-12px } 
     .sec-hero .swiper-slide, .sec-hero .hero-slider{ height:25vh !important }
-    
+    .news-item > span img, .news-item-captain-img img{ height:100% }
 }
 
 
