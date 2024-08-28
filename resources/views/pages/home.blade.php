@@ -128,7 +128,7 @@
             <div class="row">
                 @foreach($news as $key => $val)
                 @if($key==0)
-                <div class="col-lg-6">
+                <div class="col-md-6">
                     <div class="card-overlay-flex">
                         <a class="card-overlay card-overlay-sm outline-effect" href="{{$val->category->slug}}/{{$val->slug}}">
                             <span class="card-overlay-img"><img src="assets/images/space-3.gif" alt="" class="w-100 thumb" style="background-image: url('data/images/{{$val->img}}');"></span>
@@ -141,7 +141,7 @@
                 </div>
                 @endif
                 @endforeach
-                <div class="col-lg-6">
+                <div class="col-md-6">
                     @foreach($news as $key => $val)
                     @if($key>0)
                     <a href="{{$val->category->slug}}/{{$val->slug}}" class="news-item">
