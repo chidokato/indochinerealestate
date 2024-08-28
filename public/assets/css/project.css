@@ -74,15 +74,7 @@
 .slider-section-thumbs{ padding-top:5px; background:#dddddd36; padding-bottom:5px }
 .slider-section-thumbs .swiper-wrapper{ justify-content: center; }
 
-@media (min-width: 992px) {
-  .main-content .row .col-left{ width:480px; display:flex; align-items: flex-start; }
-}
-@media (min-width: 1201px) {
-  .main-content .row .col-left{ width:570px; display:flex; align-items: flex-start; }
-}
-@media (min-width: 1600px) {
-  .main-content .row .col-left{ width:700px; display:flex; align-items: flex-start; }
-}
+
 .section-le{ background-color:#f0f0f061 }
 .section-le .row{ flex-direction: row-reverse;  }
 
@@ -219,4 +211,20 @@
 
 .card-overlay:hover .card-overlay-img img {
     transform: scale(1.1);
+}
+
+
+@media (min-width: 992px) {
+  .main-content .row .col-left{ width:480px; display:flex; align-items: flex-start; }
+}
+@media (min-width: 1201px) {
+  .main-content .row .col-left{ width:570px; display:flex; align-items: flex-start; }
+}
+@media (min-width: 1600px) {
+  .main-content .row .col-left{ width:700px; display:flex; align-items: flex-start; }
+}
+
+@media (max-width: 414px) {
+  .mySwiper-product{ height:300px }
+  .mySwiper-product-thumr{ height:65px }
 }
