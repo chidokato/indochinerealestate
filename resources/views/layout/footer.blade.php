@@ -59,7 +59,7 @@
 
                 
                 <div class="row ft-register-subscribe mb-4">
-                    <div class="col-lg-6 align-self-center"><span class="line-b">ĐĂNG KÝ NHẬN THÔNG TIN TỪ <b>INDOCHINE REALESTATE</b></span></div>
+                    <div class="col-lg-6 align-self-center"><span class="line-b">ĐĂNG KÝ NHẬN THÔNG TIN TỪ <b>INDOCHINE</b></span></div>
                     <div class="col-lg-6">
                         <div class="input-group">
                             <input type="text" class="form-control" placeholder="Nhập email của bạn" aria-label="Nhập email của bạn" aria-describedby="button-addon2">
@@ -67,7 +67,7 @@
                         </div>
                     </div>
                 </div>
-                <p class="ft-copyright text-end">Copyright © 2024 INDOCHINE REALESTATE, All Rights Reserved</p>
+                <p class="ft-copyright text-end">Copyright © 2024 INDOCHINE, All Rights Reserved</p>
             </div>
         </div>
     </div>
