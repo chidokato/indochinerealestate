@@ -214,7 +214,7 @@
 	.card-s2 > a {overflow: hidden;}
 	.card-s .card-footer {border-top:none;margin-top: -6px;padding-top: 0;margin-bottom: 12px;flex-wrap: wrap;}
 	.card-s.card-s1 .card-info a {padding-left:8px;padding-right:8px;color: #444;}
-    .card-s .card-body:not(.card-s2 .card-body) {border-radius: 0;box-shadow: none;border: none;padding: 7px 0 0;margin: 0;background: none;}
+/*    .card-s .card-body:not(.card-s2 .card-body) {border-radius: 0;box-shadow: none;border: none;padding: 7px 0 0;margin: 0;background: none;}*/
 	.card-s3 > a {padding-bottom:6%; padding-top:8%}
 	.card-s3 > a span {width:56%}
 	.card-s .card-title {font-size:15px}
