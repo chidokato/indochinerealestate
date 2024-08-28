@@ -48,7 +48,7 @@ footer .ft-main, footer .ft-contact-wrap {width: 100%;}
 
 
 @media (max-width: 991px) {
-/*    footer:before, footer .ft-info img {display: none;}*/
+    footer:before, footer .ft-info img { margin-bottom:30px }
     footer .container {max-width: 100%;}
     footer .ft-contact-wrap {background: var(--sub-color) url(../images/bg-ft-left.svg) no-repeat bottom left;display: flex;flex-direction: column-reverse;padding: 24px;}
     footer .ft-link {margin-bottom: 32px;margin-top: 0;}
