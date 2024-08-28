@@ -9,7 +9,7 @@
     <meta name="keywords" itemprop="keywords" content="@yield('keywords')" />
     <meta name="news_keywords" content="@yield('keywords')" />
     <meta name="robots" content="@yield('robots')"/>
-    <link rel="shortcut icon" href="data/home/{{$setting->favicon}}" />
+    <link rel="shortcut icon" href="data/images/{{$setting->favicon}}" />
     <link rel="canonical" href="@yield('url')"/>
     <link rel="alternate" href="{{asset('')}}" hreflang="vi-vn" />
     <!-- and seo -->

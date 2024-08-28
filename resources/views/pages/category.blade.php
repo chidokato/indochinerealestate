@@ -87,8 +87,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="row row-cols-3 row-cols-md-3 g-4 " id="load-product">
-                    @include('pages.iteam.loadproduct')
+                <div class="row" id="load-product">
+                    @foreach($posts as $key => $val)
+                        @include('pages.iteam.product')
+                    @endforeach
                 </div>
                 <div class="load-more text-center mt-4 pt-2">
                     <div class="cta-btn ir">
