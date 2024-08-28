@@ -22,11 +22,11 @@
 <section class="section2">
     <div class="menu">
         <ul>
-            <li> <a class="nav-link" href="gioi-thieu#gioithieu">Giới thiệu</a> </li>
-            <li> <a class="nav-link" href="gioi-thieu#tamnhin">Tầm nhìn - sứ mệnh</a> </li>
-            <li> <a class="nav-link" href="gioi-thieu#muctieu">Mục tiêu chiến lược</a> </li>
-            <li> <a class="nav-link" href="gioi-thieu#giatri">Giá trị cốt lõi</a> </li>
-            <li> <a class="nav-link" href="gioi-thieu#dichvu">Dịch vụ</a> </li>
+            <li> <a class="nav-link" href="#gioithieu">Giới thiệu</a> </li>
+            <li> <a class="nav-link" href="#tamnhin">Tầm nhìn - sứ mệnh</a> </li>
+            <li> <a class="nav-link" href="#muctieu">Mục tiêu chiến lược</a> </li>
+            <li> <a class="nav-link" href="#giatri">Giá trị cốt lõi</a> </li>
+            <li> <a class="nav-link" href="#dichvu">Dịch vụ</a> </li>
         </ul>
     </div>
 </section>
@@ -240,6 +240,7 @@
 @endsection
 
 @section('js')
+
 <script>
     var swiper = new Swiper(".mySwiper", {
         slidesPerView: 6,
@@ -258,5 +259,70 @@
         clickable: true,
         },
     });
+
+    document.addEventListener('DOMContentLoaded', function() {
+        var links = document.querySelectorAll('.scroll-link');
+
+        links.forEach(function(link) {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                var targetId = this.getAttribute('href').substring(1);
+                var targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    smoothScrollTo(targetElement, 300, this);
+                }
+            });
+        });
+
+        window.addEventListener('scroll', function() {
+            var currentPosition = window.scrollY;
+
+            links.forEach(function(link) {
+                var targetId = link.getAttribute('href').substring(1);
+                var targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    var targetPosition = targetElement.offsetTop;
+                    var targetHeight = targetElement.offsetHeight;
+
+                    if (currentPosition >= targetPosition && currentPosition < targetPosition + targetHeight) {
+                        link.classList.add('active');
+                    } else {
+                        link.classList.remove('active');
+                    }
+                }
+            });
+        });
+    });
+
+    function smoothScrollTo(target, duration, link) {
+        var targetPosition = target.getBoundingClientRect().top + window.scrollY;
+        var startPosition = window.scrollY;
+        var distance = targetPosition - startPosition;
+        var startTime = null;
+
+        function animation(currentTime) {
+            if (startTime === null) startTime = currentTime;
+            var timeElapsed = currentTime - startTime;
+            var run = ease(timeElapsed, startPosition, distance, duration);
+            window.scrollTo(0, run);
+            if (timeElapsed < duration) {
+                requestAnimationFrame(animation);
+            } else {
+                window.scrollTo(0, targetPosition);
+                link.classList.add('active'); // Thêm lớp 'active' vào liên kết sau khi cuộn hoàn tất
+            }
+        }
+
+        function ease(t, b, c, d) {
+            t /= d / 2;
+            if (t < 1) return c / 2 * t * t + b;
+            t--;
+            return -c / 2 * (t * (t - 2) - 1) + b;
+        }
+
+        requestAnimationFrame(animation);
+    }
 </script>
 @endsection

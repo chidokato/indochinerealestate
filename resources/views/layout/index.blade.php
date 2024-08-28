@@ -47,6 +47,7 @@
     <link href="assets/css/form.css" rel="stylesheet">
     <link href="assets/css/runglac.css" rel="stylesheet">
     <link href="assets/css/simpleLightbox.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
     @yield('css')
     
 </head>
@@ -113,6 +114,8 @@
     <!-- JS
     ============================================ -->
     <!------------------- JS core------------------->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/simpleLightbox.min.js"></script>

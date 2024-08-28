@@ -382,6 +382,11 @@
     .sec-service-hp .service-item {width:46%;margin-right: 2%;margin-left: 2%;}
     .sec-product-hot .product-hot-slider {overflow: hidden;}
     .sec-product-hot .product-hot-slider .grid-view {margin-left: -5rem; margin-right: -5rem;}
+    .cover-title-home .cover-title-filled{ font-size:1.6rem !important }
+    .cover-title-home h3{ line-height:18px }
+    .cover-title-home .cover-descip{ width:100% !important }
+    .cover-title-home h3 span:after{ transform: scale(0.2); bottom: -60px; }
+    .cover-title-home h3 span:before{ bottom: -14px; }
 }
 @media (max-width: 360px) {
     .sec-broker-hp .card-s3 .card-body .card-title {font-size:14px}
@@ -396,3 +401,5 @@
     .sec-broker-hp .card-s3 .card-body .card-info i {font-size:12px; margin-right:4px !important}
     .sec-broker-hp .card-s3 .card-body .card-ct .btn-outline {font-size:11px}
 }
+
+    

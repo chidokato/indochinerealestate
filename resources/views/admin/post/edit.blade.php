@@ -450,14 +450,9 @@
     }
 ?>
 <script>
-    function addCode() {
-        document.getElementById("add_to_me").insertAdjacentHTML("beforeend",
-                '<div class="form-group d-flex align-items-center justify-content-between" id="section_list"><input class="form-control" type="text" name="name_section:vi[]" placeholder="Tiếng Việt"><input class="form-control" type="text" name="name_section:en[]" placeholder="Tiếng Anh"><input class="form-control" type="text" name="name_section:cn[]" placeholder="Tiếng Trung"><button type="button" onClick="delete_row(this)" class="form-control w100"><i class="fa fa-minus-circle" aria-hidden="true"></i></button></div>');
-    }
     function delete_row(e) {
         e.parentElement.remove();
     }
-
 </script>
 
 <script type="text/javascript">
@@ -468,17 +463,12 @@ document.querySelectorAll('.price-input').forEach(function (input) {
         e.target.value = value;
     });
 });
-
-
-
-
 </script>
 
 
 <script>
     document.querySelector('.price-input').addEventListener('input', function() {
         let price = this.value.replace(/\./g, ''); // Bỏ dấu chấm để lấy giá trị số
-
         if (price) {
             let priceInWords = numberToWords(Number(price));
             document.querySelector('.viewprice').textContent = priceInWords;
@@ -486,7 +476,6 @@ document.querySelectorAll('.price-input').forEach(function (input) {
             document.querySelector('.viewprice').textContent = '';
         }
     });
-
     function numberToWords(number) {
         const units = [
             { value: 1E9, suffix: " tỷ" },
@@ -494,7 +483,6 @@ document.querySelectorAll('.price-input').forEach(function (input) {
             { value: 1E3, suffix: " nghìn" },
             { value: 1, suffix: " đồng" }
         ];
-
         for (let i = 0; i < units.length; i++) {
             if (number >= units[i].value) {
                 let value = (number / units[i].value).toFixed(1).replace('.0', '');

@@ -169,10 +169,33 @@
         slidesPerView: 4,
         spaceBetween: 30,
         pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
+            el: ".swiper-pagination",
+            clickable: true,
         },
+        breakpoints: {
+            // khi màn hình có chiều rộng từ 0px trở lên
+            0: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+            },
+            // khi màn hình có chiều rộng từ 640px trở lên
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            // khi màn hình có chiều rộng từ 768px trở lên
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 25,
+            },
+            // khi màn hình có chiều rộng từ 1024px trở lên
+            1024: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+            },
+        }
     });
+
 </script>
 
 @endsection
