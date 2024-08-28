@@ -30,7 +30,7 @@
         
         <div class="row">
             <div class="col-lg-9">
-                <h1 class="text-uppercase title-subpage">{{ $post->name }}</h1>
+                <h1 class="title-subpage">{{ $post->name }}</h1>
                 <div class="news-detail">
                     <div class="description">
                         {!! $post->detail !!}
