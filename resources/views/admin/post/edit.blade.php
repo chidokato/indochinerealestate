@@ -94,7 +94,10 @@
                                 <div class="input-group-append">
                                     <span class="input-group-text" id="basic-addon2">đ</span>
                                 </div>
+
                                 <input value="{{ $data->price?number_format($data->price, 0, ',', '.'):'' }}" type="text" name="price" class="form-control price-input" placeholder="Từ (mặc định)">
+                                <!-- <div class="viewprice"></div> -->
+
                                 <input value="{{ $data->price_max?number_format($data->price_max, 0, ',', '.'):'' }}" type="text" name="price_max" class="form-control price-input" placeholder="Đến">
                             </div>
                         </div>
@@ -467,6 +470,38 @@ document.querySelectorAll('.price-input').forEach(function (input) {
 });
 
 
+
+
+</script>
+
+
+<script>
+    document.querySelector('.price-input').addEventListener('input', function() {
+        let price = this.value.replace(/\./g, ''); // Bỏ dấu chấm để lấy giá trị số
+
+        if (price) {
+            let priceInWords = numberToWords(Number(price));
+            document.querySelector('.viewprice').textContent = priceInWords;
+        } else {
+            document.querySelector('.viewprice').textContent = '';
+        }
+    });
+
+    function numberToWords(number) {
+        const units = [
+            { value: 1E9, suffix: " tỷ" },
+            { value: 1E6, suffix: " triệu" },
+            { value: 1E3, suffix: " nghìn" },
+            { value: 1, suffix: " đồng" }
+        ];
+
+        for (let i = 0; i < units.length; i++) {
+            if (number >= units[i].value) {
+                let value = (number / units[i].value).toFixed(1).replace('.0', '');
+                return value + units[i].suffix;
+            }
+        }
+    }
 </script>
 
 @endsection
