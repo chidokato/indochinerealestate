@@ -66,8 +66,8 @@ class SliderController extends Controller
         $slider->user_id = Auth::User()->id;
         $slider->name = $data['name'];
         $slider->note = $data['note'];
-        $slider->link = $data['link'];
-        $slider->content = $data['content'];
+        // $slider->link = $data['link'];
+        // $slider->content = $data['content'];
 
         // thêm ảnh
         if ($request->hasFile('img')) {
