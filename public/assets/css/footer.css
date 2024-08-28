@@ -48,7 +48,7 @@ footer .ft-main, footer .ft-contact-wrap {width: 100%;}
 
 
 @media (max-width: 991px) {
-    footer:before, footer .ft-info img {display: none;}
+/*    footer:before, footer .ft-info img {display: none;}*/
     footer .container {max-width: 100%;}
     footer .ft-contact-wrap {background: var(--sub-color) url(../images/bg-ft-left.svg) no-repeat bottom left;display: flex;flex-direction: column-reverse;padding: 24px;}
     footer .ft-link {margin-bottom: 32px;margin-top: 0;}
@@ -61,7 +61,7 @@ footer .ft-main, footer .ft-contact-wrap {width: 100%;}
     .ft-contact h6 {margin-bottom:0;padding-bottom: 4px;}
     .ft-contact h6:after {right: 100%;}
     .ft-register-subscribe .align-self-center {margin-bottom:24px}
-    footer .ft-info:before {content:'INDOCHINE REALESTATE';font-size: 14px;-webkit-text-stroke-width: 0.8px;letter-spacing: .8px;margin-bottom: 0.4rem;color: #fff;}
+/*    footer .ft-info:before {content:'INDOCHINE REALESTATE';font-size: 14px;-webkit-text-stroke-width: 0.8px;letter-spacing: .8px;margin-bottom: 0.4rem;color: #fff;}*/
     .ft-social {text-align: center;flex: 0 0 auto;width: 100%;padding-right: 0;position:relative;display: flex;align-items: center;justify-content: center;margin-top: 8px;}
 }
 
