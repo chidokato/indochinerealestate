@@ -24,7 +24,6 @@
     </div>
 </section>
 <!------------------- END: BREADCRUMB ------------------->
-
 <section class="card-grid news-sec">
     <div class="container">
         
