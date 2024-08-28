@@ -37,20 +37,11 @@
             </div>
             <div class="col-md-8 ft-main">
                 <div class="row">
-                    <div class="col-6 col-lg-6 ft-info">
+                    <div class="col-md-6 ft-info">
                         <img src="data/images/logo_-02.png" alt="">
                     </div>
-                    <!-- <div class="col-6 col-lg-3">
-                        <div class="ft-link">
-                            <h5 class="line-b">Về Vietnam Homes</h5>
-                            <ul class="ft-link-items">
-                                <li><a href="#" class="">Giới thiệu</a></li>
-                                <li><a href="#" class="">Liên hệ</a></li>
-                                <li><a href="#" class="">Chính sách bảo mật thông tin</a></li>
-                            </ul>
-                        </div>
-                    </div> -->
-                    <div class="col-6 col-lg-6">
+                    
+                    <div class="col-md-6">
                         <div class="ft-link">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15676.90695339032!2d106.6893047!3d10.7939386!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528cdeb13ffff%3A0x8db7b80bb49f4899!2zQ8O0bmcgVHkgQ-G7lSBQaOG6p24gQuG6pXQgxJDhu5luZyBT4bqjbiBJbmRvY2hpbmU!5e0!3m2!1svi!2s!4v1718358591174!5m2!1svi!2s" style="border:0; width: 100%; height: 300px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
