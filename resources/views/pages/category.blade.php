@@ -89,7 +89,9 @@
                 </div>
                 <div class="row" id="load-product">
                     @foreach($posts as $key => $val)
-                        @include('pages.iteam.product')
+                        <div class="col-md-4 mb-3">
+                            @include('pages.iteam.product')
+                        </div>
                     @endforeach
                 </div>
                 <div class="load-more text-center mt-4 pt-2">
