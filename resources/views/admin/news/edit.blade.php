@@ -117,6 +117,39 @@
             </div>
         </div>
 
+        <div class="linkneo" id="section3">
+            <div class="card shadow mb-4" >
+                <span class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-primary">Hình ảnh</h6>
+                </span>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div style="display: flex;">
+                                <span>
+                                    @foreach($images as $val)
+                                    <span class="view-img-ditail" id="detail_img">
+                                        <img src="data/images/{{$val->img}}">
+                                        <button onClick="delete_row(this)" type="button" id="del_img_detail"> <i class="fa fa-times" aria-hidden="true"></i> </button>
+                                        <input type="hidden"  name="id_img_detail" id="id_img_detail" value="{{$val->id}}" />
+                                    </span>
+                                    @endforeach
+                                    <span class="image-preview" id="imagePreview"></span>
+                                    <span class="file-input-wrapper">
+                                        <input type="file" name="imgdetail[]" multiple class="file-input" id="imgInput">
+                                        <img src="admin_asset/img/add-img.png" alt="Upload Image" class="custom-file-input1" id="customFileInput">
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row detail-img">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="linkneo" id="seo">
             <div class="card shadow mb-4" >
                 <span class="card-header py-3 d-flex flex-row align-items-center justify-content-between">

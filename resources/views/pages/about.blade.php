@@ -58,12 +58,12 @@
 
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="assets/images/gioithieu/dvpt-01.png"></div>
-                        <div class="swiper-slide"><img src="assets/images/gioithieu/dvpt-02.png"></div>
-                        <div class="swiper-slide"><img src="assets/images/gioithieu/dvpt-03.png"></div>
-                        <div class="swiper-slide"><img src="assets/images/gioithieu/dvpt-04.png"></div>
-                        <div class="swiper-slide"><img src="assets/images/gioithieu/dvpt-05.png"></div>
-                        <div class="swiper-slide"><img src="assets/images/gioithieu/dvpt-06.png"></div>
+                        <div class="swiper-slide"><img src="assets/images/gioithieu/quymo-02.png"></div>
+                        <div class="swiper-slide"><img src="assets/images/gioithieu/quymo-03.png"></div>
+                        <div class="swiper-slide"><img src="assets/images/gioithieu/quymo-04.png"></div>
+                        <div class="swiper-slide"><img src="assets/images/gioithieu/quymo-05.png"></div>
+                        <div class="swiper-slide"><img src="assets/images/gioithieu/quymo-06.png"></div>
+                        <div class="swiper-slide"><img src="assets/images/gioithieu/quymo-07.png"></div>
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>

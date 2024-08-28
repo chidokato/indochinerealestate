@@ -29,7 +29,7 @@
 .section3 .img img{ width:100% }
 .section3 .content{ text-align:justify;  }
 
-.section4{ background: url(../images/gioithieu/bg-don-vi-phat-trien.png); padding:0px 0px 30px; background-size:cover; background-color: #e6e6e6; }
+.section4{ background: url(../images/gioithieu/quymo-01.png); padding:0px 0px 30px; background-size:cover; background-color: #e6e6e6; }
 .section4 h2{ text-align:center; font-size:1.8rem; color:var(--main-color); font-weight:bold; margin-bottom:30px; text-transform:uppercase; margin-top: -30px; }
 .section4 .swiper-wrapper .swiper-slide img{ width:100% }
 
@@ -47,9 +47,9 @@
 .section6 .iteam .text{ position:absolute; top:35px; left:70px; width: 60%; }
 .section6 .iteam .icon{ width:70px; margin-bottom:20px }
 
-.section7{ background:#870819; padding:50px 0px; color:#fff; text-align:center; position:relative; }
+.section7{ background:var(--main-color); padding:50px 0px; color:#fff; text-align:center; position:relative; }
 .section7::before {
-    content: '';
+/*    content: '';*/
     position: absolute;
     top: 0;
     right: 0;
@@ -91,7 +91,7 @@
 .iteam5{ background: url('../images/gioithieu/dichvu_5.png') no-repeat center center; }
 .iteam5:hover{ background: url('../images/gioithieu/dichvu_5-5.png') no-repeat center center; }
 
-.section9{ background:#870819; padding:40px 0px; color:#fff }
+.section9{ background:var(--main-color); padding:40px 0px; color:#fff; padding-bottom:30px }
 .section9 H2{ font-size:1.4rem; color:#fff; text-align:center; font-weight:bold; margin-bottom:30px }
 .timeline{ padding-left:150px }
 .timeline .timeline-entry p{ margin-bottom:0px }
