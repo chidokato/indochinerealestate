@@ -15,6 +15,23 @@ use App\Models\Slider;
 
 class SliderController extends Controller
 {
+    function saveImage($file, $path = 'data/images/', $maxWidth = 1500, $maxHeight = 1500) {
+        $originalFilename = $file->getClientOriginalName();
+        $filenameWithoutExtension = Str::slug(pathinfo($originalFilename, PATHINFO_FILENAME), '-');
+        $extension = $file->getClientOriginalExtension();
+        $filename = $filenameWithoutExtension . '.' . $extension;
+
+        while (file_exists(public_path($path . $filename))) {
+            $filename = $filenameWithoutExtension . '_' . rand(0, 99) . '.' . $extension;
+        }
+        $img = Image::make($file);
+        $img->resize($maxWidth, $maxHeight, function ($constraint) {
+            $constraint->aspectRatio();
+            $constraint->upsize();
+        });
+        $img->save(public_path($path . $filename));
+        return $filename;
+    }
     /**
      * Display a listing of the resource.
      *
@@ -55,10 +72,8 @@ class SliderController extends Controller
         // thêm ảnh
         if ($request->hasFile('img')) {
             $file = $request->file('img');
-            $filename = $file->getClientOriginalName();
-            while(file_exists("data/home/800/".$filename)){$filename = rand(0,99)."_".$filename;}
-            $img = Image::make($file)->resize(800, 800, function ($constraint) {$constraint->aspectRatio();})->save(public_path('data/home/800/'.$filename));
-            // $file->move('data/home', $filename);
+            // $filename = saveImage($file); // Gọi hàm saveImage từ helper
+            $filename = $this->saveImage($file);
             $slider->img = $filename;
         }
         // thêm ảnh
@@ -110,12 +125,10 @@ class SliderController extends Controller
         
         // thêm ảnh
         if ($request->hasFile('img')) {
-            if(File::exists('data/home/'.$slider->img)) { File::delete('data/home/800/'.$slider->img);} // xóa ảnh cũ
+            if(File::exists('data/images/'.$slider->img)) { File::delete('data/images/'.$slider->img);} // xóa ảnh cũ
             $file = $request->file('img');
-            $filename = $file->getClientOriginalName();
-            while(file_exists("data/home/800/".$filename)){$filename = rand(0,99)."_".$filename;}
-            $img = Image::make($file)->resize(800, 800, function ($constraint) {$constraint->aspectRatio();})->save(public_path('data/home/800/'.$filename));
-            // $file->move('data/home', $filename);
+            // $filename = saveImage($file); // Gọi hàm saveImage từ helper
+            $filename = $this->saveImage($file);
             $slider->img = $filename;
         }
         // thêm ảnh
