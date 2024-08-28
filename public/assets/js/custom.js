@@ -57,12 +57,12 @@
 
 
 
-// var mainMenu = document.getElementById('navbarToggler');
-//     mainMenu.onclick = function() {toggleActive()}
-//     function toggleActive() {
-//       mainMenu.classList.toggle("active");
-//       document.querySelector('header').classList.toggle("show");
-//     }
+var mainMenu = document.getElementById('navbarToggler');
+    mainMenu.onclick = function() {toggleActive()}
+    function toggleActive() {
+      mainMenu.classList.toggle("active");
+      document.querySelector('header').classList.toggle("show");
+    }
     
 // var expandSearchBtn = document.getElementById('expand-search-btn');
 //     expandSearchBtn.onclick = function() {toggleClassActive()}
@@ -74,7 +74,7 @@
 //     }
 
 
-// function myFunctLink(element) {
-//   location.href = element.attributes.href.value;
-// }
+function myFunctLink(element) {
+  location.href = element.attributes.href.value;
+}
 
