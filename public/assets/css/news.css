@@ -34,5 +34,8 @@
 @media (max-width: 414px) {
     .news-hightlight .iteam:first-child{ width:100% }
     .news-hightlight .iteam{ width:50%; padding:.4rem }
-    .news-hightlight .card-overlay{ padding-bottom:0 }
+    .news-hightlight .card-overlay{ margin-bottom:0 }
+    .news-sec .horizontal-view .card-s > a{ width:auto; }
+    .horizontal-view .card-s > a{ top:0; left:0 }
+    .horizontal-view .card-s{ padding-bottom:0px }
 }
