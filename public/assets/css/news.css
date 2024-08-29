@@ -41,4 +41,5 @@
     .horizontal-view .card-s > a img{ height:90px; object-fit:cover; }
     .horizontal-view .card-s > .card-body{ justify-content: center; }
     .card-s .card-title{ font-weight:100 }
+    .row-cols-1 .card-s .card-title a{ -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 }
