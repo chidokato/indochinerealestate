@@ -39,4 +39,5 @@
     .horizontal-view .card-s > a{ top:0; left:0 }
     .horizontal-view .card-s{ padding-bottom:0px }
     .horizontal-view .card-s > a img{ height:90px; object-fit:cover; }
+    .horizontal-view .card-s > .card-body{ justify-content: center; }
 }
