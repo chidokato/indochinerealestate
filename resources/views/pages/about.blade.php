@@ -35,12 +35,12 @@
     <section class="section3 bg" >
         <div class="container" >
             <div class="row">
-                <div class="col-4">
+                <div class="col-md-4">
                     <div class="img">
                         <img src="assets/images/gioithieu/gioi-thieu-02.png">
                     </div>
                 </div>
-                <div class="col-8">
+                <div class="col-md-8">
                     <div class="content">
                         <p>Được thành lập từ đam mê, kiến tạo bởi khát vọng, đắp xây bởi nhiệt huyết, Công Ty Cổ Phần Bất Động Sản INDOCHINE đang vươn lên trở thành một trong những đơn vị bất động sản hàng đầu Việt Nam.</p>
                         <p>Năm 2022, thị trường bất động sản trải qua "cơn bĩ cực" chưa từng có khiến hàng trăm doanh nghiệp địa ốc đóng cửa, giải thể, thu hẹp quy mô. Nhạy bén trước thời cơ, biến cơ hội thành thách thức để vươn lên, INDOCHINE chính thức chào sân thị trường bằng lễ ra mắt hoành tráng, đánh dấu cho sự ra đời của một "ngôi sao mới". Thực lực được khẳng định bằng thực tích, chỉ trong một thời gian ngắn, INDOCHINE đã khiến toàn thị trường "rúng động" với hàng trăm giao dịch thành công, tiên phong "phá băng" thị trường bất động sản trong giai đoạn bấy giờ. Được đà tiến lên, INDOCHINE tiếp tục phát triển vượt bậc, xứng danh "hắc mã" trên thị trường bất động sản.</p>
@@ -56,7 +56,6 @@
             <div class="row">
                 <div class="col-12">
                     <h2>Đơn vị phát triển & phân phối <br> bất động sản hàng đầu</h2>
-
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide"><img src="assets/images/gioithieu/quymo-02.png"></div>
@@ -79,10 +78,10 @@
     <section class="section5 bg">
         <div class="container" >
             <div class="row">
-                <div class="col-7">
+                <div class="col-md-7">
                    <div class="img"><img src="assets/images/gioithieu/tam-nhin.png"></div>
                 </div>
-                <div class="col-5">
+                <div class="col-md-5">
                     <div class="content">
                         <div class="title">
                             <img src="assets/images/gioithieu/tam-nhin-1.png">
@@ -99,8 +98,8 @@
     <section class="section6 bg">
         <div class="container">
             <div class="row">
-                <div class="col-1"></div>
-                <div class="col-11">
+                <div class="col-md-1"></div>
+                <div class="col-md-11">
                     <div class="iteam">
                         <div class="img"><img src="assets/images/gioithieu/bg_sumenh.png"></div>
                         <div class="text">
@@ -110,7 +109,6 @@
                             <p>Tuân theo những chuẩn mực cao nhất về đạo đức trong kinh doanh và trách nhiệm xã hội, tạo niềm tự hào về một thương hiệu bất động sản Thành công</p>
                         </div>
                     </div>
-                   
                 </div>
             </div>
         </div>
@@ -176,7 +174,7 @@
 <section class="section9">
     <div class="container">
         <h2>BAN LÃNH ĐẠO</h2>
-        <div class="row" style="background:url(assets/images/gioithieu/bg_lanhdao1.png); background-size: cover;">
+        <div class="row hangle" style="background:url(assets/images/gioithieu/bg_lanhdao1.png); background-size: cover;">
             <div class="col-md-1"></div>
             <div class="col-md-5">
                 <div class="timeline">
@@ -254,18 +252,62 @@ var swiper = new Swiper(".mySwiper", {
     slidesPerView: 6,
     spaceBetween: 30,
     pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
+        el: ".swiper-pagination",
+        clickable: true,
     },
+    breakpoints: {
+        // khi màn hình có chiều rộng từ 0px trở lên
+        0: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+        },
+        // khi màn hình có chiều rộng từ 640px trở lên
+        640: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+        },
+        // khi màn hình có chiều rộng từ 768px trở lên
+        768: {
+            slidesPerView: 5,
+            spaceBetween: 25,
+        },
+        // khi màn hình có chiều rộng từ 1024px trở lên
+        1024: {
+            slidesPerView: 6,
+            spaceBetween: 30,
+        },
+    }
 });
 
 var swiper = new Swiper(".mySwiper1", {
     slidesPerView: 5,
     spaceBetween: 30,
     pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
+        el: ".swiper-pagination",
+        clickable: true,
     },
+    breakpoints: {
+        // khi màn hình có chiều rộng từ 0px trở lên
+        0: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+        },
+        // khi màn hình có chiều rộng từ 640px trở lên
+        640: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+        },
+        // khi màn hình có chiều rộng từ 768px trở lên
+        768: {
+            slidesPerView: 4,
+            spaceBetween: 25,
+        },
+        // khi màn hình có chiều rộng từ 1024px trở lên
+        1024: {
+            slidesPerView: 5,
+            spaceBetween: 30,
+        },
+    }
 });
 
 document.addEventListener('DOMContentLoaded', function() {
