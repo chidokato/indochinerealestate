@@ -70,7 +70,7 @@
 .main-content .row{ justify-content: flex-end; }
 .main-content .mySwiper-section-1 img{ height:600px !important }
 .main-content .mySwiper-section-2 img{ height:450px !important }
-.main-content p{ text-align:center; }
+.main-content p{ text-align:justify; }
 
 .slider-section-thumbs{ padding-top:5px; background:#dddddd36; padding-bottom:5px }
 .slider-section-thumbs .swiper-wrapper{ justify-content: center; }
