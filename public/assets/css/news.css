@@ -30,3 +30,8 @@
 .news-detail figure figcaption{ font-size:.9rem; font-style:italic; }
 .all-images .img{ margin-bottom:20px }
 .all-images .img img{ border-radius:10px }
+
+@media (max-width: 414px) {
+    .news-hightlight .iteam:first-child{ width:100% }
+    .news-hightlight .iteam{ width:50%; padding:.4rem }
+}
