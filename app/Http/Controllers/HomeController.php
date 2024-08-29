@@ -112,7 +112,7 @@ class HomeController extends Controller
     public function post($catslug, $slug)
     {
         $post = Post::where('slug', $slug)->first();
-        $sections = Section::where('post_id', $post->id)->get();
+        $sections = Section::where('post_id', $post->id)->orderBy('stt', 'desc')->get();
         $related_post = Post::where('category_id', $post->category_id)->whereNotIn('id', [$post->id])->orderBy('id', 'desc')->take(10)->get();
         if ($post->sort_by == 'Product') {
             return view('pages.project', compact(
