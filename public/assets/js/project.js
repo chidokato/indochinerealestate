@@ -1,8 +1,24 @@
 var swiper = new Swiper(".mySwiper-product-thumr", {
-  spaceBetween: 2,
-  slidesPerView: 10,
   freeMode: true,
   watchSlidesProgress: true,
+  breakpoints: {
+        0: {
+            slidesPerView: 5,
+            spaceBetween: 2,
+        },
+        640: {
+            slidesPerView: 5,
+            spaceBetween: 2,
+        },
+        768: {
+            slidesPerView: 7,
+            spaceBetween: 2,
+        },
+        1024: {
+            slidesPerView: 10,
+            spaceBetween: 2,
+        },
+    }
 });
 
 var swiper2 = new Swiper(".mySwiper-product", {
@@ -14,22 +30,18 @@ var swiper2 = new Swiper(".mySwiper-product", {
         swiper: swiper,
     },
     breakpoints: {
-        // khi màn hình có chiều rộng từ 0px trở lên
         0: {
             slidesPerView: 1,
             spaceBetween: 2,
         },
-        // khi màn hình có chiều rộng từ 640px trở lên
         640: {
             slidesPerView: 1,
             spaceBetween: 2,
         },
-        // khi màn hình có chiều rộng từ 768px trở lên
         768: {
             slidesPerView: 2,
             spaceBetween: 2,
         },
-        // khi màn hình có chiều rộng từ 1024px trở lên
         1024: {
             slidesPerView: 2,
             spaceBetween: 2,
@@ -63,18 +75,38 @@ document.addEventListener('DOMContentLoaded', function () {
                 slidesPerView: 10,
                 freeMode: true,
                 watchSlidesProgress: true,
+                breakpoints: {
+                    0: {
+                        slidesPerView: 5,
+                        spaceBetween: 2,
+                    },
+                    640: {
+                        slidesPerView: 5,
+                        spaceBetween: 2,
+                    },
+                    768: {
+                        slidesPerView: 7,
+                        spaceBetween: 2,
+                    },
+                    1024: {
+                        slidesPerView: 10,
+                        spaceBetween: 2,
+                    },
+                }
             });
 
             var swiper2 = new Swiper('.' + mySwiper2Class, {
                 spaceBetween: 2,
                 slidesPerView: 1,
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
+                // navigation:false,
+                // navigation: {
+                //     nextEl: '.swiper-button-next',
+                //     prevEl: '.swiper-button-prev',
+                // },
                 thumbs: {
                     swiper: swiper,
                 },
+
             });
         }
     });

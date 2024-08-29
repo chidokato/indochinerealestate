@@ -140,7 +140,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
     .form-switch .form-check-input:focus {border-color: rgba(0,0,0,.25);}
     .sec-search .sec-search-wrap {padding: 6px 12px 12px !important;min-height: 64px;}
-    .sec-fiter-search {padding-bottom:1rem; margin-top: 0; min-height: 75px;}
+    .sec-fiter-search {padding-bottom:1rem; margin-top: 0;}
     .sec-fiter-search form, .sec-search form {position: fixed;top:0;bottom:0;left:0;right:0;background:#fff;z-index: 9999;padding: 72px 20px 20px;transition: all .3s;transform: translateX(100%);opacity: 0;height: 100vh;overflow-y: auto;flex-direction: column;}
     
     .sec-fiter-search .active .btn-toggle, .sec-search .active .btn-toggle {position: fixed;top:0;right: 5px;width: 48px;height:48px;display: flex;align-items: center;justify-content: center;z-index: 10000;background: none !important;border: none;}

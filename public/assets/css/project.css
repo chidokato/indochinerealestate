@@ -227,4 +227,8 @@
 @media (max-width: 414px) {
   .mySwiper-product{ height:300px }
   .mySwiper-product-thumr{ height:65px }
+  .heading{ align-items: flex-start; flex-direction: column; }
+  .heading .left{ margin-bottom:1rem }
+  .slider-section{ height:250px }
+  .slider-section-thumbs{ height:50px }
 }
