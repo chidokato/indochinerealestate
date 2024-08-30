@@ -239,4 +239,5 @@
   .slider-section{ height:250px }
   .slider-section-thumbs{ height:50px }
   .main-breadcrumb{ flex-direction: column; }
+  .heading h1{ font-size:1.5rem }
 }
