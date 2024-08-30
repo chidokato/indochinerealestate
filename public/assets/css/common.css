@@ -80,7 +80,7 @@ h5 {font-family: var(--subtitle-fontface); font-size: 19px;}
 .fz-50 {font-size: 50%}
 .fz-40 {font-size: 40%}
 
-.bg1{ background:#f0f0f099 }
+.bg1{ background:#f0f0f0 }
 .border100{ border-radius:100px }
 
 .text-main {color:var(--main-color)!important;}

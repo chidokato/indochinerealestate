@@ -39,7 +39,7 @@
         <div class="cover-title-home">
             <div class="text-start">
                 <div class="cover-title">
-                    <h3><span class="cover-title-filled text-main">DỰ ÁN TRỌNG ĐIỂM</span></h3>
+                    <h2><span class="cover-title-filled text-main">DỰ ÁN TRỌNG ĐIỂM</span></h2>
                 </div>
                 <div class="cover-descip">
                     <p>Những dự án mang dấu ấn INDOCHINE, được phát triển kinh doanh và phân phối độc quyền bởi INDOCHINE</p>
@@ -78,7 +78,7 @@
         <div class="cover-title-home">
             <div class="text-start">
                 <div class="cover-title">
-                    <h3><span class="cover-title-filled text-main">DỰ ÁN TOÀN QUỐC</span></h3>
+                    <h2><span class="cover-title-filled text-main">DỰ ÁN TOÀN QUỐC</span></h2>
                 </div>
             </div>
         </div>
@@ -119,7 +119,7 @@
         <div class="cover-title-home">
             <div class="text-start">
                 <div class="cover-title">
-                    <h3><span class="cover-title-filled text-main">TIN TỨC</span></h3>
+                    <h2><span class="cover-title-filled text-main">TIN TỨC</span></h2>
                 </div>
                 <div class="cover-descip">
                     <p>Cập nhật những thông tin mới nhất từ INDOCHINE và thị trường bất động sản</p>
