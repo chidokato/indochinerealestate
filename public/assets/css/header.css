@@ -325,3 +325,5 @@ header .navbar-brand{ left:0; right:0; }
 .icon-header img{ height:30px }
 .navbar-nav .nav-item{ width:150px; display: flex; align-items: center; justify-content: space-evenly; }
 .navbar-nav .nav-item .icon-header{ display:flex; justify-content: space-evenly; width:100% }
+
+.navbar-expand-lg .navbar-nav .dropdown .dropdown-menu{ top:79px }

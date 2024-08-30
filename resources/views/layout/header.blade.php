@@ -1,4 +1,3 @@
-
 <!------------------- NAVIGATOR ------------------->
 <header class="navhome" id="header">
     <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Ninth navbar example">
@@ -20,15 +19,31 @@
                     <a class="nav-link" href="{{asset('')}}">Trang chủ</a>
                 </li>
                 @foreach($menu as $key => $val)
-                @if($key==2)
-                <li class="logo">
-                    <a class="navbar-brand" href="{{asset('')}}"><img src="data/images/{{$setting->img}}" alt="" class="mw-100"></a>
-                </li>
-                @else
-                <li class="nav-item">
-                    <a class="nav-link" href="{{$val->slug}}">{{$val->name}}</a>
-                </li>
-                @endif
+                    @if($val->parent == 0)
+                        @if($key==2)
+                        <li class="logo">
+                            <a class="navbar-brand" href="{{asset('')}}"><img src="data/images/{{$setting->img}}" alt="" class="mw-100"></a>
+                        </li>
+                        @else
+                            @if(count($menu->where('parent', $val->id)) == 0)
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{$val->slug}}">{{$val->name}}</a>
+                            </li>
+                            @else
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="{{$val->slug}}" data-bs-toggle="dropdown" onclick="myFunctLink(this)">{{$val->name}}</a>
+                                <a class="expand dropdown-toggle d-lg-none" href="#" data-bs-toggle="dropdown"></a>
+                                <div class="dropdown-menu">
+                                    <ul>
+                                        @foreach($menu->where('parent', $val->id) as $sub)
+                                        <li><a href="{{$sub->slug}}" class="submenu-link"><i class="icon-next me-2"></i>{{$sub->name}}</a></li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                            </li>
+                            @endif
+                        @endif
+                    @endif
                 @endforeach
                 <li class="nav-item">
                     <div class="icon-header">
@@ -36,13 +51,7 @@
                         <a target="_blank" href="{{$setting->youtube}}"><img src="assets/images/youtube-logo-icon.png"></a>
                     </div>
                 </li>
-                <!-- <li class="nav-item">
-                    <a class="nav-link" href="projects.htm">Tin tức</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="reviews.htm">Liên hệ</a>
-                </li>
-                <li class="nav-item dropdown">
+                <!-- <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="news.htm" data-bs-toggle="dropdown" onclick="myFunctLink(this)">Tin tức</a>
                     <a class="expand dropdown-toggle d-lg-none" href="#" data-bs-toggle="dropdown"></a>
                     <div class="dropdown-menu">

@@ -29,7 +29,7 @@ class HomeController extends Controller
     function __construct()
     {
         $setting = Setting::find('1');
-        $menu = Menu::where('parent', 0)->orderBy('view', 'asc')->get();
+        $menu = Menu::orderBy('view', 'asc')->get();
         view()->share( [
             'setting'=>$setting,
             'menu'=>$menu,

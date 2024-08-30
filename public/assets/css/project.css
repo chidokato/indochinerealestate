@@ -80,11 +80,13 @@
 .section-le{ background-color:#f0f0f061 }
 .section-le .row{ flex-direction: row-reverse;  }
 
-.heading{ display:flex; justify-content: space-between; margin-bottom:20px; border-bottom:1px solid #ddd; padding-bottom:20px; align-items: center; }
+.heading{ display:flex; justify-content: space-between; margin-bottom: 1rem; align-items: center; }
 .heading h1{ color:#000; font-size:2rem }
-.heading .price{ font-size:2rem; font-weight:bold; margin-bottom:15px }
+.heading .price{ font-size:2rem; font-weight:bold; }
 .heading .address{ font-size:1rem }
 .heading .address a{ color:#007AFF; margin-left:20px; text-decoration:underline; }
+.status span{ margin-right:2rem; font-size:.9rem }
+.status span i{ font-size:1.2rem }
 
 .bg-secondary {
     box-shadow: inset 0 0 0 1px #9d091738;
@@ -95,7 +97,7 @@
 }
 .bg{ background-color:#f0f0f061  }
 .main-breadcrumb{ display:flex;     align-items: center;
-    justify-content: space-between; margin-bottom:20px }
+    justify-content: space-between; margin-bottom:1rem }
 
 .detail{ padding:20px; border-radius:5px;  }
 .detail ul{ display:flex; flex-direction: column; }
@@ -242,4 +244,5 @@
   .slider-section-thumbs{ height:50px }
   .main-breadcrumb{ flex-direction: column; }
   .heading h1{ font-size:1.5rem }
+  .main-breadcrumb{ align-items: flex-start; }
 }
