@@ -188,10 +188,11 @@
 
 .content-text p{ margin-bottom:1rem }
 .content-text ul{ display:flex; flex-direction: column; margin-bottom:1rem }
-.content-text ul li{ margin-bottom: .8rem; position:relative; padding-left:12px; text-align:justify; }
+.content-text ul li{ margin-bottom: .5rem; position:relative; padding-left:12px; text-align:justify; }
 .content-text ul li:last-child{ margin-bottom:0px }
 .content-text ul li:after{ position:absolute; content:''; background-color:#000; width:5px; height:5px; border-radius:100%; left:0; top:9px }
 .content-text ol{ margin-left:15px; margin-bottom:1rem }
+.content-text ol li{ margin-bottom:.5rem }
 .content-text table td{ padding: 7px 0px; }
 .content-text table tr{ border-bottom: 1px solid #ddd; }
 .content-text table{ width:100% }
