@@ -52,7 +52,7 @@ class HomeController extends Controller
         ));
     }
 
-    public function category($slug)
+    public function category(Request $request, $slug)
     {
         $data = Category::where('slug', $slug)->first();
         // cat_array
@@ -74,7 +74,16 @@ class HomeController extends Controller
             if ($data->sort_by == 'Product') {
                 $cats = Category::where('sort_by','Product')->where('parent','>',0)->get();
                 $provinces = Province::get();
-                $posts = Post::whereIn('category_id', $cat_array)->orderBy('id', 'DESC')->paginate(30);
+
+                $cat_array = $request->input('categories', $cat_array);
+                $query = Post::query()->orderBy('id', 'DESC');
+                if ($key = $request->get('key', '')) {
+                    $query->where('name', 'like', '%' . $key . '%');
+                }
+                if (!empty($cat_array)) {
+                    $query->whereIn('category_id', $cat_array);
+                }
+                $posts = $query->paginate($request->get('per_page', 10));
 
                 return view('pages.category', compact(
                     'data',

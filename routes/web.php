@@ -117,7 +117,7 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 // home system
 Route::get('sendmail', [HomeSystemController::class, 'sendmail'])->name('sendmail');
 Route::post('question', [HomeSystemController::class, 'question'])->name('question');
-Route::get('seach/filter/posts', [HomeSystemController::class, 'filterPosts'])->name('posts.filter');
+// Route::get('seach/filter/posts', [HomeSystemController::class, 'filterPosts'])->name('posts.filter');
 
 // add to cart
 Route::prefix('product')->group(function () {

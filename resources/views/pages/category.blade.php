@@ -10,37 +10,34 @@
 @endsection
 
 @section('content')
-
+<form action="{{ url()->current() }}" method="GET">
 <section class="sec-fiter-search floating-label">
     <div class="container">
         <div data-bs-toggle="button" class="d-md-none"><button type="button" class="btn btn-circle btn-toggle"><span class="icon-search"></span></button></div>
-        <form>
+        
             <div class="row g-3 justify-content-lg-end">
                 <div class="col-lg-4">
                     <div class="input-group search-input">
                         <span class="input-group-text border100"><i class="icon-search"></i></span>
-                        <input type="text" class="form-control" placeholder="Nhập địa chỉ, dự án">
+                        <input value="{{ request()->key ?? '' }}" name="key" type="text" class="form-control" placeholder="Nhập địa chỉ, dự án">
                     </div>
                     <button type="submit" class="btn btn-circle">Tìm kiếm</button>
                 </div>
             </div>
-        </form>
+        
     </div>
 </section>
 
 <!------------------- CARD ------------------->
-
 <section class="card-grid sales-sec list-tindang">
-
     <div class="container">
-        
         <div class="row">
             <div class="col-lg-3 d-none d-lg-block">
                 <div class="widget widget-list widget-hightlight mb-3">
                     <h4><span>Loại hình</span></h4>
                     @foreach($cats as $val)
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name="categories[]" value="{{$val->id}}" id="flexCheck{{$val->id}}">
+                            <input class="form-check-input" type="checkbox" name="categories[]" value="{{$val->id}}" id="flexCheck{{$val->id}}" {{ in_array($val->id, request()->input('categories', [])) ? 'checked' : '' }}>
                             <label class="form-check-label aa22" for="flexCheck{{$val->id}}">
                                 <span>{{$val->name}}</span> <span>({{ count($val->Post) }})</span>
                             </label>
@@ -94,54 +91,31 @@
                         </div>
                     @endforeach
                 </div>
-                <div class="load-more text-center mt-4 pt-2">
-                    <div class="cta-btn ir">
-                        <a class="" href="#"><span class="cta-text font-weight-semibold">Xem thêm</span><span class="cta-ico"><i class="icon-down"></i></span></a>
-                    </div>
+
+                <div class="paginate-search">
+                    <div>Hiển thị: </div>
+                    <select class="paginate" name="per_page" onchange="this.form.submit()">
+                        <option value="10" {{ request()->per_page == 10 ? 'selected' : '' }}>10</option>
+                        <option value="20" {{ request()->per_page == 20 ? 'selected' : '' }}>20</option>
+                        <option value="50" {{ request()->per_page == 50 ? 'selected' : '' }}>50</option>
+                        <option value="100" {{ request()->per_page == 100 ? 'selected' : '' }}>100</option>
+                    </select>
+                    <div> Từ {{ $posts->firstItem() }} đến {{ $posts->lastItem() }} trên tổng {{ $posts->total() }} </div>
+                    {{ $posts->appends(request()->all())->links() }}
                 </div>
+                
             </div>
             
         </div>
     </div>
 </section>
 <!------------------- END CARD ------------------->
-
+</form>
 @endsection
 
 
 @section('js')
 <!-- jQuery CDN -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function () {
-    $('.form-check-input').on('change', function () {
-        let categories = [];
-        let provinces = [];
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
 
-        // Lấy danh sách category được chọn
-        $('input[name="categories[]"]:checked').each(function () {
-            categories.push($(this).val());
-        });
-
-        // Lấy danh sách province được chọn
-        $('input[name="provinces[]"]:checked').each(function () {
-            provinces.push($(this).val());
-        });
-
-        // Gửi yêu cầu AJAX
-        $.ajax({
-            url: "{{ route('posts.filter') }}",
-            type: 'GET',
-            data: {
-                categories: categories,
-                provinces: provinces
-            },
-            success: function (data) {
-                $('#load-product').html(data);
-            }
-        });
-    });
-});
-
-</script>
 @endsection
