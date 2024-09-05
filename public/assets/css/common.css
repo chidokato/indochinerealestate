@@ -370,6 +370,14 @@ header, a, a h5, .notify-num, .navbar .navbar-brand, .nav-link, .sec-nav .navbar
 .option-cat .iteam a{ margin-right:20px; font-size: .8rem; background:#ddd; padding:2px 10px 5px; border-radius:20px }
 /*.option-cat .iteam a{ color:#000 }*/
 
+.paginate-search{ display:flex; align-items: center; font-size:1rem; justify-content: flex-end; }
+.paginate-search select{ border-radius:3px; border:1px solid #ced4da; margin:0px 10px; padding:3px 7px; }
+.paginate-search select:focus-visible{ outline:none }
+.paginate-search .pagination{ margin-left:20px }
+.paginate-search .pagination .page-link{ background:none; border-radius:100%; color:var(--main-color); margin:0px 3px; border:none }
+.paginate-search .pagination a.page-link:hover{ background:#ddd }
+.paginate-search .pagination .page-item.active .page-link{ background:var(--main-color); color:#fff; border:none }
+
 @media (min-width: 769px) {
 	.scrollbar {
 		scrollbar-width: thin;

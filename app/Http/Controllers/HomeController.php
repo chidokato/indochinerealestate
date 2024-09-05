@@ -83,7 +83,7 @@ class HomeController extends Controller
                 if (!empty($cat_array)) {
                     $query->whereIn('category_id', $cat_array);
                 }
-                $posts = $query->paginate($request->get('per_page', 12));
+                $posts = $query->paginate($request->get('per_page', 1));
 
                 return view('pages.category', compact(
                     'data',
