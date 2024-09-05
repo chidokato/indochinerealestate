@@ -95,10 +95,10 @@
                 <div class="paginate-search">
                     <div>Hiển thị: </div>
                     <select class="paginate" name="per_page" onchange="this.form.submit()">
-                        <option value="10" {{ request()->per_page == 10 ? 'selected' : '' }}>10</option>
-                        <option value="20" {{ request()->per_page == 20 ? 'selected' : '' }}>20</option>
-                        <option value="50" {{ request()->per_page == 50 ? 'selected' : '' }}>50</option>
-                        <option value="100" {{ request()->per_page == 100 ? 'selected' : '' }}>100</option>
+                        <option value="12" {{ request()->per_page == 12 ? 'selected' : '' }}>12</option>
+                        <option value="24" {{ request()->per_page == 24 ? 'selected' : '' }}>24</option>
+                        <option value="48" {{ request()->per_page == 48 ? 'selected' : '' }}>48</option>
+                        <option value="96" {{ request()->per_page == 96 ? 'selected' : '' }}>96</option>
                     </select>
                     <div> Từ {{ $posts->firstItem() }} đến {{ $posts->lastItem() }} trên tổng {{ $posts->total() }} </div>
                     {{ $posts->appends(request()->all())->links() }}
