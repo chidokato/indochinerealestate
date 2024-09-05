@@ -50,7 +50,7 @@
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" name="provinces[]" value="{{$val->id}}" id="flexCheck{{$val->id}}">
                             <label class="form-check-label aa22" for="flexCheck{{$val->id}}">
-                                <span>{{$val->name}}</span> <span>({{ $posts->total() }})</span>
+                                <span>{{$val->name}}</span> <span>({{ count($val->Post) }})</span>
                             </label>
                         </div>
                         @endif
@@ -70,7 +70,7 @@
                     <div class="iteam"><a href="">Indochine phân phối độc quyền</a></div>
                 </div>
                 <div class="sort-box">
-                    <span>có <span class="text-main font-weight-semibold">{{ count($posts) }}</span> sản phẩm</span>
+                    <span>có <span class="text-main font-weight-semibold">{{ $posts->total() }}</span> sản phẩm</span>
                     <div class="sort-ct">
                         <div class="dropdown">
                             <a class="btn ripple-effect dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
