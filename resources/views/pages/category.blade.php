@@ -50,7 +50,7 @@
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" name="provinces[]" value="{{$val->id}}" id="flexCheck{{$val->id}}">
                             <label class="form-check-label aa22" for="flexCheck{{$val->id}}">
-                                <span>{{$val->name}}</span> <span>({{ count($val->Post) }})</span>
+                                <span>{{$val->name}}</span> <span>({{ $posts->total() }})</span>
                             </label>
                         </div>
                         @endif
