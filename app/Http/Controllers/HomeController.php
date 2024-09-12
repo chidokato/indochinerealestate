@@ -139,7 +139,15 @@ class HomeController extends Controller
     }
 
 
-    
+    public function sitemap()
+    {
+        $category = Category::all();
+        $Post = Post::all();
+        return response()->view('sitemap', [
+            'category' => $category,
+            'Post' => $Post,
+            ])->header('Content-Type', 'text/xml');
+    }
 
 
     

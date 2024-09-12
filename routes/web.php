@@ -112,6 +112,7 @@ Route::middleware(['auth'])->group(function () {
 
 // home view
 Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('sitemap.xml', [HomeController::class, 'sitemap'])->name('sitemap');
 // Route::get('search', [HomeController::class, 'search'])->name('search');
 
 // home system
@@ -143,7 +144,6 @@ Route::prefix('account')->group(function () {
 
 
 
-Route::get('custom-knot', [HomeController::class, 'customknot'])->name('customknot');
 Route::get('location/{slug}', [HomeController::class, 'province']);
 Route::get('{slug}', [HomeController::class, 'category']);
 Route::get('{catslug}/{slug}', [HomeController::class, 'post']);
