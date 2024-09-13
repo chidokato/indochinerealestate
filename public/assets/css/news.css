@@ -26,7 +26,7 @@
 .news-detail p{ margin-bottom:1rem; text-align:justify; }
 .news-detail img{ max-width:100%; height:auto !important; }
 .news-detail figure{ text-align:center; }
-.news-detail figure figcaption{ font-size:.9rem; font-style:italic; }
+.news-detail figure figcaption{ font-size:.9rem; font-style:italic; margin-top:.4rem }
 .all-images .img{ margin-bottom:20px }
 .all-images .img img{ border-radius:10px }
 
