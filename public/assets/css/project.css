@@ -100,7 +100,7 @@
 .main-breadcrumb{ display:flex;     align-items: center;
     justify-content: space-between; margin-bottom:1rem }
 
-.detail{ padding:20px; border-radius:5px;  }
+.detail{ padding:20px; border-radius:5px; margin-bottom:1rem }
 .detail ul{ display:flex; flex-direction: column; }
 .detail ul li{ position: relative; padding-left:15px }
 .detail ul li::before {
