@@ -113,7 +113,7 @@
 .detail table{ width:100% }
 .detail table tr{ border-bottom:1px solid #ddd; }
 .detail table tr:last-child{ border:none }
-.detail table td{ padding:7px 0px }
+.detail table td{ padding:7px 0px; font-family:arial; }
 .detail table td:first-child{     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap; padding-right:15px;  }
