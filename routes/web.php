@@ -41,6 +41,7 @@ Route::post('account/register', [LoginController::class, 'register'])->name('reg
 
 
 Route::post('/upload', [UploadController::class, 'upload'])->name('upload');
+
 Route::get('admin/get-section', function () {
     return view('admin.post.add_section')->render();
 });

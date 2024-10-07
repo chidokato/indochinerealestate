@@ -118,7 +118,7 @@
                         <div class="news-item-captain-img">
                             <div class="news-item-captain-img-wrap">
                                 <img src="assets/images/space-3.gif" style="background-image: url('data/images/{{$val->img}}');" alt="" class="w-100">
-                                <span class="date"><i class="icon-time me-1"></i>{{date_format($val->updated_at,"d/m/Y")}}</span>
+                                <span class="date"><i class="icon-time me-1"></i> <span>{{date_format($val->updated_at,"d/m/Y")}}</span> </span>
                             </div>
                         </div>
                         <div class="news-item-captain-body">
@@ -130,7 +130,7 @@
                     <a href="{{$val->category->slug}}/{{$val->slug}}" class="news-item">
                         <span><img src="assets/images/space-3.gif" style="background-image: url('data/images/{{$val->img}}');" alt="" class="w-100"></span>
                         <div class="news-item-body">
-                            <span class="date"><i class="icon-time me-1"></i>{{date_format($val->updated_at,"d/m/Y")}}</span>
+                            <span class="date"><i class="icon-time me-1"></i> <span>{{date_format($val->updated_at,"d/m/Y")}}</span> </span>
                             <p class="mb-0 text-truncate-set text-truncate-set-2">{{$val->name}}</p>
                         </div>
                     </a>
