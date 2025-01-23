@@ -1,8 +1,8 @@
 @extends('layout.index')
 
-@section('title') {{$post->title ? $post->title : $post->name}}@endsection
-@section('description') {{$post->description ? $post->description : $post->name.$post->name}}@endsection
-@section('robots') index, follow @endsection
+@section('title'){{$post->title ? $post->title : $post->name}}@endsection
+@section('description'){{$post->description ? $post->description : $post->name.$post->name}}@endsection
+@section('robots')index, follow@endsection
 @section('url'){{asset('')}}@endsection
 @section('img'){{asset('')}}data/images/{{$post->img}}@endsection
 
