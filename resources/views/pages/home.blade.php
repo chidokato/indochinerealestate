@@ -1,8 +1,8 @@
 @extends('layout.index')
 
-@section('title') {{$setting->title ? $setting->title : $setting->name}} @endsection
+@section('title'){{$setting->title ? $setting->title : $setting->name}}@endsection
 @section('description') {{$setting->description}} @endsection
-@section('robots') index, follow @endsection
+@section('robots'){{'index, follow'}}@endsection
 @section('url'){{asset('')}}@endsection
 @section('img'){{asset('')}}{{'data/images/logo_-01.png'}}@endsection
 
