@@ -29,9 +29,9 @@
                 </div>
                 <div class="ft-social">
                     <ul class="social">
-                        <li><a class=""><i class="icon-facebook"></i></a></li>
-                        <li><a class=""><i class="icon-youtube"></i></a></li>
-                        <li><a class=""><i class="icon-zalo"></i></a></li>
+                        <li><a class="{{$setting->facebook}}"><i class="icon-facebook"></i></a></li>
+                        <li><a class="{{$setting->youtube}}"><i class="icon-youtube"></i></a></li>
+                        <!-- <li><a class=""><i class="icon-zalo"></i></a></li> -->
                     </ul>
                 </div>
             </div>
