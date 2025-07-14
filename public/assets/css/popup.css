@@ -47,3 +47,6 @@
     outline: none;
 }
 .popup-content a{ color: var(--main-color); font-weight:bold; }
+
+.popup-content button{ background: var(--main-color); color:#fff }
+.popup-content button:hover{ color:#fff }
