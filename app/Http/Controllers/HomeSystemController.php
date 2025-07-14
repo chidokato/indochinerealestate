@@ -39,7 +39,7 @@ class HomeSystemController extends Controller
         $Customer->name = $request->name;
         $Customer->phone = $request->phone;
         $Customer->email = $request->email;
-        $Customer->title = $request->title;
+        $Customer->title = $request->url;
         $Customer->content = $request->content;
         $Customer->save();
         return redirect()->route('home')->with('success','Gửi thành công');

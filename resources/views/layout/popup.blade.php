@@ -58,6 +58,7 @@
         <h3>NHẬN BẢNG GIÁ</h3>
         <form method="post" action="question">
         @csrf
+            <input type="hidden" id="current-url" name="url" value="">
             <input type="text" name="name" placeholder="Họ và Tên">
             <input type="text" name="phone" placeholder="Số điện thoại">
             <input type="text" name="email" placeholder="Địa chỉ email">
@@ -66,3 +67,12 @@
         </form>
     </div>
 </div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const urlInput = document.getElementById("current-url");
+        if (urlInput) {
+            urlInput.value = window.location.href;
+        }
+    });
+</script>

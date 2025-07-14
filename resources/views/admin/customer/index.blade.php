@@ -27,6 +27,7 @@
                                     <th>Name</th>
                                     <th>Phone</th>
                                     <th>Email</th>
+                                    <th>Link</th>
                                     <th>date</th>
                                     <th></th>
                                 </tr>
@@ -37,6 +38,7 @@
                                     <td>{{$val->name}}</td>
                                     <td>{{$val->phone}}</td>
                                     <td>{{$val->email}}</td>
+                                    <td>{{$val->title}}</td>
                                     <td>{{$val->created_at}}</td>
                                     <td style="display: flex;">
                                         <form action="{{route('customer.destroy', [$val->id])}}" method="POST">
