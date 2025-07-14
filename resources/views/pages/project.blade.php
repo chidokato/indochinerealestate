@@ -211,8 +211,9 @@
                     </div>
                     <div class="hotline"> <a href="tel:{{$setting->hotline}}"><i class="icon-phone"></i> {{$setting->hotline}}</a> </div>
                 </div>
-                <div class="pupup">
-                    <button> <img src="assets/images/icon-document-register.svg"> Đăng ký nhận tài liệu dự án</button>
+                
+                <div class="pupup click_popup">
+                    <a href="javascript:void(0)"><button> <img src="assets/images/icon-document-register.svg"> Đăng ký nhận tài liệu dự án</button></a>
                 </div>
             </div>
             
