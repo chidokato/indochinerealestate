@@ -1,66 +1,69 @@
-<div class="fixd-right">
-	<ul>
-		<li><a class="quick-view" href="#quick-view" ><img src="frontend/img/form.png"></a></li>
-		<li><a href="http://zalo.me/0389301518"><img src="frontend/img/zalo.png"></a></li>
-		<li><a target="_blank" href="https://www.facebook.com/duancongvienthienduong/"><img src="frontend/img/facebook_icon.png"></a></li>
-		<li><a target="_blank" href="https://www.youtube.com/watch?v=2RDwX7ppUrg"><img src="frontend/img/youtube.png"></a></li>
-		<li><a href="tel:0389301518"><img src="frontend/img/phone.png"></a></li>
-		
-	</ul>
+<div class="hotline-phone-ring-wrap form-ring-wrap">
+    <div class="hotline-phone-ring ">
+        <div class="hotline-phone-ring-circle"></div>
+        <div class="hotline-phone-ring-circle-fill"></div>
+        <div class="hotline-phone-ring-img-circle click_popup">
+            <a href="javascript:void(0)" class="pps-btn-img">
+                <img src="assets/img/icon/dowload.png" alt="Gọi điện thoại" width="50">
+            </a>
+        </div>
+        <div class="hotline-bar click_popup">
+            <a href="javascript:void(0)">
+                <span class="text-hotline">Bảng giá</span>
+            </a>
+        </div>
+    </div>
 </div>
 
-<style type="text/css">
-	.fixd-right{ position:fixed; right:0; bottom:30px; z-index:99; }
-	.fixd-right ul li img{ width: 50px }
-	.fixd-right ul li{ margin-bottom:10px }
-
-	.form-popup{ text-align:center; }
-	.form-popup .form{ padding:20px; }
-	.form-popup .form input{box-shadow: 0 0 0 0.05rem rgba(0, 123, 255, .25);}
-</style>
-
-
-<div class="overlay-dark modal fade quick-view-modal" id="quick-view" style="display: none;">
-    <div class="modal-dialog modal-dialog-centered modal-ms">
-        <div class="modal-content">
-            <div class="close view-close">
-                <span aria-hidden="true">×</span>
-            </div>
-            <div class="modal-body property-block summary p-3 form-popup">
-                <div class="row row-cols-xl-1 row-cols-1">
-                    <div class="col">
-                        <div class="form">
-		                    <h4 class="mb-3">LIÊN HỆ BÁO GIÁ</h4>
-		                    <!-- <p>Trân trọng kính mời Quý khách tham quan MIỄN PHÍ Công viên Thiên đường vào thứ 7 và Chủ nhật hàng tuần. Toàn bộ chi phí và việc đưa đón chuyến tham quan sẽ do Công viên Thiên đường hân hạnh đài thọ.</p> -->
-		                    <form class="form-icon-right" action="dangky" method="post">
-		                    	@csrf
-		                        <div class="row">
-		                            <div class="col-12 mb-10">
-		                                <div class="form-group mb-0">
-		                                    <input required type="text" class="form-control" name="name" placeholder="Họ & Tên *">
-		                                </div>
-		                            </div>
-		                            <div class="col-12 mb-10">
-		                                <div class="form-group mb-0">
-		                                    <input required type="text" class="form-control" name="phone" placeholder="Số điện thoại *">
-		                                </div>
-		                            </div>
-		                            <div class="col-12 mb-10">
-		                                <div class="form-group mb-0">
-		                                    <input type="email" class="form-control" name="email" placeholder="Địa chỉ Email">
-		                                </div>
-		                            </div>
-		                            <div class="col-12">
-		                                <div class="form-group mb-0">
-		                                    <button class="btn btn-primary w-100">GỬI NGAY</button>
-		                                </div>
-		                            </div>
-		                        </div>
-		                    </form>
-		                </div>
-                    </div>
-                </div>
-            </div>
+<div class="hotline-phone-ring-wrap zalo-ring-wrap">
+    <div class="hotline-phone-ring">
+        <div class="hotline-phone-ring-circle"></div>
+        <div class="hotline-phone-ring-circle-fill"></div>
+        <div class="hotline-phone-ring-img-circle">
+        <a target="_blank" href="https://zalo.me/{{$setting->hotline}}" class="pps-btn-img">
+            <img src="assets/img/icon/zalo.png" alt="Gọi điện thoại" width="50">
+        </a>
         </div>
+    
+    <div class="hotline-bar">
+        <a target="_blank" href="https://zalo.me/{{$setting->hotline}}">
+            <span class="text-hotline">Chat</span>
+        </a>
+    </div>
+    </div>
+</div>
+
+<div class="hotline-phone-ring-wrap hotline-ring-wrap">
+    <div class="hotline-phone-ring">
+        <div class="hotline-phone-ring-circle"></div>
+        <div class="hotline-phone-ring-circle-fill"></div>
+        <div class="hotline-phone-ring-img-circle">
+        <a href="tel:{{$setting->hotline}}" class="pps-btn-img">
+            <img src="assets/img/icon/icon-call-nh.png" alt="Gọi điện thoại" width="50">
+        </a>
+        </div>
+    
+    <div class="hotline-bar">
+        <a href="tel:{{$setting->hotline}}">
+            <span class="text-hotline">Gọi ngay</span>
+        </a>
+    </div>
+    </div>
+</div>
+
+
+<div id="popup-banggia" class="popup-overlay">
+    <div class="popup-content">
+        <span class="close-popup">&times;</span>
+        <h3>NHẬN BẢNG GIÁ</h3>
+        <form action="POST">
+            <input type="text" name="name" placeholder="Họ và Tên">
+            <input type="text" name="phone" placeholder="Số điện thoại">
+            <input type="text" name="email" placeholder="Địa chỉ email">
+            <p class="sub">(*) Bằng việc nhấn vào "nhận báo giá". Quý khách đồng ý với <a target="_blank" href="https://indochinerealestate.vn/tin-noi-bo/chinh-sach-bao-mat-thong-tin-indochine-real-estate">Chính sách bảo mật thông tin </a> của chúng tôi.</p>
+            <div class="cta-btn ir">
+                <a class="" href="tin-tuc"><span class="cta-text font-weight-semibold">Nhận báo giá</span><span class="cta-ico"><i class="icon-next"></i></span></a>
+            </div>
+        </form>
     </div>
 </div>

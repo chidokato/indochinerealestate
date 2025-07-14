@@ -47,6 +47,7 @@
     <link href="assets/css/form.css" rel="stylesheet">
     <link href="assets/css/runglac.css" rel="stylesheet">
     <link href="assets/css/simpleLightbox.css" rel="stylesheet">
+    <link href="assets/css/popup.css" rel="stylesheet">
     <link href="assets/css/responsive.css" rel="stylesheet">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-8R10SSS97Z"></script>
@@ -64,63 +65,12 @@
 
 <body>
     @include('layout.header')
+
     @yield('content')
+    
     @include('layout.footer')
 
-    <div class="hotline-phone-ring-wrap form-ring-wrap">
-        <div class="hotline-phone-ring ">
-            <div class="hotline-phone-ring-circle"></div>
-            <div class="hotline-phone-ring-circle-fill"></div>
-            <div class="hotline-phone-ring-img-circle click_popup">
-                <a href="javascript:void(0)" class="pps-btn-img">
-                    <img src="assets/img/icon/dowload.png" alt="Gọi điện thoại" width="50">
-                </a>
-            </div>
-        
-        <div class="hotline-bar click_popup">
-            <a href="javascript:void(0)">
-                <span class="text-hotline">Bảng giá</span>
-            </a>
-        </div>
-        </div>
-    </div>
-
-    <div class="hotline-phone-ring-wrap zalo-ring-wrap">
-        <div class="hotline-phone-ring">
-            <div class="hotline-phone-ring-circle"></div>
-            <div class="hotline-phone-ring-circle-fill"></div>
-            <div class="hotline-phone-ring-img-circle">
-            <a target="_blank" href="https://zalo.me/{{$setting->hotline}}" class="pps-btn-img">
-                <img src="assets/img/icon/zalo.png" alt="Gọi điện thoại" width="50">
-            </a>
-            </div>
-        
-        <div class="hotline-bar">
-            <a target="_blank" href="https://zalo.me/{{$setting->hotline}}">
-                <span class="text-hotline">Chat</span>
-            </a>
-        </div>
-        </div>
-    </div>
-
-    <div class="hotline-phone-ring-wrap hotline-ring-wrap">
-        <div class="hotline-phone-ring">
-            <div class="hotline-phone-ring-circle"></div>
-            <div class="hotline-phone-ring-circle-fill"></div>
-            <div class="hotline-phone-ring-img-circle">
-            <a href="tel:{{$setting->hotline}}" class="pps-btn-img">
-                <img src="assets/img/icon/icon-call-nh.png" alt="Gọi điện thoại" width="50">
-            </a>
-            </div>
-        
-        <div class="hotline-bar">
-            <a href="tel:{{$setting->hotline}}">
-                <span class="text-hotline">Gọi ngay</span>
-            </a>
-        </div>
-        </div>
-    </div>
-
+    @include('layout.popup')
     <!-- JS
     ============================================ -->
     <!------------------- JS core------------------->
@@ -130,6 +80,7 @@
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/simpleLightbox.min.js"></script>
     <script src="assets/js/custom.js?v=30"></script>
+    <script src="assets/js/popup.js?v=30"></script>
     
     @yield('js')
 
