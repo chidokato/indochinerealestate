@@ -56,12 +56,18 @@
     <div class="popup-content">
         <span class="close-popup">&times;</span>
         <h3>NHẬN BẢNG GIÁ</h3>
-        <form method="post" action="question">
+        <form id="validateForm" method="post" action="question">
         @csrf
             <input type="hidden" id="current-url" name="url" value="">
-            <input type="text" name="name" placeholder="Họ và Tên">
-            <input type="text" name="phone" placeholder="Số điện thoại">
-            <input type="text" name="email" placeholder="Địa chỉ email">
+            <label>
+                <input type="text" name="name" placeholder="Họ và Tên (*)">
+            </label>
+            <label>
+                <input type="text" name="phone" placeholder="Số điện thoại (*)">
+            </label>
+            <label>
+                <input type="text" name="email" placeholder="Địa chỉ email">
+            </label>
             <p class="sub">(*) Bằng việc nhấn vào "nhận báo giá". Quý khách đồng ý với <a target="_blank" href="https://indochinerealestate.vn/tin-noi-bo/chinh-sach-bao-mat-thong-tin-indochine-real-estate">Chính sách bảo mật thông tin </a> của chúng tôi.</p>
             <button class="btn btn-circle" type="submit">Nhận báo giá</button>
         </form>

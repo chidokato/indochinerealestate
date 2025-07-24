@@ -81,6 +81,8 @@
     <script src="assets/js/simpleLightbox.min.js"></script>
     <script src="assets/js/custom.js?v=30"></script>
     <script src="assets/js/popup.js?v=30"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="assets/js/validate.js"></script>
     
     @yield('js')
 
