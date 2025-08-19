@@ -14,8 +14,8 @@
                     </div>
                     <div class="ft-contact-item">
                         <div class="ft-contact-item-text">
-                            <h6>Email</h6>
-                            <span><a href="mailto:info@vietnamhomesgroup.com.vn" class="">{{$setting->email}}</a></span>
+                            <h6>Trụ sở chính</h6>
+                            <span><a href="mailto:info@vietnamhomesgroup.com.vn" class="">Tầng 5 tòa nhà Vạn Gia Phát, Số 1 Trần Khánh Dư, Phường Tân Định, Thành Phố Hồ Chí Minh, Việt Nam</a></span>
                         </div>
                         <span class="ft-contact-item-ico"><i class="icon-mail-filled"></i></span>
                     </div>
