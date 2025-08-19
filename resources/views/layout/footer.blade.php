@@ -8,7 +8,7 @@
                     <div class="ft-contact-item">
                         <div class="ft-contact-item-text">
                             <h6>HOTLINE TƯ VẤN</h6>
-                            <span><a href="tel:0919511881">{{$setting->hotline}}</a></span>
+                            <span><a href="tel:{{$setting->hotline}}">{{$setting->hotline}}</a></span>
                         </div>
                         <span class="ft-contact-item-ico"><i class="icon-phone-filled"></i></span>
                     </div>
@@ -17,7 +17,7 @@
                             <h6>Trụ sở chính</h6>
                             <span>Tầng 5 tòa nhà Vạn Gia Phát, Số 1 Trần Khánh Dư, Phường Tân Định, Thành Phố Hồ Chí Minh, Việt Nam</span>
                         </div>
-                        <span class="ft-contact-item-ico"><i class="icon-mail-filled"></i></span>
+                        <span class="ft-contact-item-ico"><i class="icon-building-filled"></i></span>
                     </div>
                     <div class="ft-contact-item">
                         <div class="ft-contact-item-text">
