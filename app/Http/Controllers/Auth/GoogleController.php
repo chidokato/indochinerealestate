@@ -76,7 +76,7 @@ class GoogleController extends Controller
             return redirect()->intended('admin/main');
         } else {
             Auth::logout(); // thoát luôn để tránh user chưa đủ quyền vẫn giữ session
-            return redirect('/')
+            return redirect('admin')
                 ->with('error', 'Liên hệ Admin để cấp quyền truy cập');
         }
     }
