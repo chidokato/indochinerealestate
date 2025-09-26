@@ -25,6 +25,7 @@ use App\Http\Controllers\Admin\WardController;
 use App\Http\Controllers\Admin\StreetController;
 
 use App\Http\Controllers\Admin\UploadController;
+use App\Http\Controllers\Auth\GoogleController;
 
 use App\Http\Controllers\AjaxController;
 use App\Http\Controllers\HomeController;
@@ -39,6 +40,8 @@ Route::post('admin', [LoginController::class, 'store']);
 Route::get('logout', [LoginController::class, 'logout'])->name('logout');
 Route::post('account/register', [LoginController::class, 'register'])->name('register');
 
+Route::get('auth/google', [GoogleController::class, 'redirectToGoogle'])->name('google.redirect');
+Route::get('auth/google/callback', [GoogleController::class, 'handleGoogleCallback'])->name('google.callback');
 
 Route::post('/upload', [UploadController::class, 'upload'])->name('upload');
 

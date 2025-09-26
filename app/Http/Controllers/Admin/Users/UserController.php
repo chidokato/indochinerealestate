@@ -130,7 +130,8 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
-        echo "ok";
+        User::find($id)->delete();
+        return redirect()->back();
     }
 
 
