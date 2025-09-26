@@ -68,11 +68,11 @@ class GoogleController extends Controller
         }
 
         // Login user trong Laravel
-        Auth::login($user, true);
-
-
+        // Auth::login($user, true);
+        
         // Kiểm tra quyền
         if ($user->permission < 6) {
+            Auth::login($user, true);
             return redirect()->intended('admin/main');
         } else {
             Auth::logout(); // thoát luôn để tránh user chưa đủ quyền vẫn giữ session
