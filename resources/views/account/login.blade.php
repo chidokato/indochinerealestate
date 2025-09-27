@@ -18,7 +18,7 @@
                 <a href="{{ route('google.redirect') }}">
                     <button class="login btn btn-light btn-lg d-flex align-items-center shadow-sm border rounded-pill ">
                       <img src="https://img.icons8.com/color/48/000000/google-logo.png" alt="Google Logo" class="me-2" width="24" height="24">
-                      <span class="">Đăng nhập vào hệ thống qua GOOGLE</span>
+                      <span class="">Đăng nhập hệ thống qua GOOGLE</span>
                     </button>
                     <p style="text-align: center;">@include('admin.alert')</p>
                 </a>
