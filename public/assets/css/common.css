@@ -378,6 +378,8 @@ header, a, a h5, .notify-num, .navbar .navbar-brand, .nav-link, .sec-nav .navbar
 .paginate-search .pagination a.page-link:hover{ background:#ddd }
 .paginate-search .pagination .page-item.active .page-link{ background:var(--main-color); color:#fff; border:none }
 
+.form-check-input {margin-top: 0.2em;}
+
 @media (min-width: 769px) {
 	.scrollbar {
 		scrollbar-width: thin;
