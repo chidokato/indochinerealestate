@@ -49,6 +49,16 @@
                     <div class="icon-header">
                         <a target="_blank" href="{{$setting->facebook}}"><img src="assets/images/facebook-logo-icon.png"></a>
                         <a target="_blank" href="{{$setting->youtube}}"><img src="assets/images/youtube-logo-icon.png"></a>
+                        
+                        @if(Auth::check())
+                        <a href="{{ Auth::check() ? url('account/main') : url('dangnhap') }}">
+                            <img src="{{ Auth::user()->avatar }}" alt="user">
+                        </a>
+                        @else
+                        <a href="{{ url('dangnhap') }}">
+                            <img src="{{ asset('assets/images/user-icon.png') }}" alt="user">
+                        </a>
+                        @endif
                     </div>
                 </li>
                 <!-- <li class="nav-item dropdown">

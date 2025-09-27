@@ -28,6 +28,7 @@ use App\Http\Controllers\Admin\UploadController;
 use App\Http\Controllers\Auth\GoogleController;
 
 use App\Http\Controllers\AjaxController;
+use App\Http\Controllers\AccountController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\HomeSystemController;
 
@@ -77,7 +78,7 @@ Route::group(['prefix'=>'ajax'],function(){
 
 
 
-Route::middleware(['auth'])->group(function () {
+Route::middleware(['admin'])->group(function () {
     Route::prefix('admin')->group(function () {
         // main
         Route::get('main', [MainController::class, 'index'])->name('admin');
@@ -114,6 +115,22 @@ Route::middleware(['auth'])->group(function () {
     });
 });
 
+// account
+Route::get('dangnhap', [AccountController::class, 'dangnhap'])->name('dangnhap');
+Route::middleware(['user'])->group(function () {
+    Route::prefix('account')->group(function () {
+        Route::get('main', [AccountController::class, 'index'])->name('account.main');
+        
+    });
+});
+
+// Route::prefix('account')->group(function () {
+//     Route::get('info', [HomeController::class, 'account'])->name('account');
+//     Route::POST('update/{id}', [HomeController::class, 'update_account'])->name('update_account'); // cập nhật thông tin người dùng
+//     Route::get('order', [HomeController::class, 'account_cart'])->name('account_cart');
+//     Route::get('order/{id}', [HomeController::class, 'account_order_dital'])->name('account_order_dital');
+// });
+
 // home view
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('sitemap.xml', [HomeController::class, 'sitemap'])->name('sitemap');
@@ -134,16 +151,6 @@ Route::prefix('product')->group(function () {
     Route::get('checkout', [HomeController::class, 'checkout'])->name('checkout'); // thanh toán
     Route::get('get_checkout', [HomeController::class, 'checkout'])->name('get_checkout'); // thanh toán
     Route::POST('order', [HomeController::class, 'order'])->name('order'); // thanh toán
-});
-
-// account
-Route::get('dangnhap', [HomeController::class, 'dangnhap'])->name('dangnhap');
-Route::get('dangky', [HomeController::class, 'dangky'])->name('dangky');
-Route::prefix('account')->group(function () {
-    Route::get('info', [HomeController::class, 'account'])->name('account');
-    Route::POST('update/{id}', [HomeController::class, 'update_account'])->name('update_account'); // cập nhật thông tin người dùng
-    Route::get('order', [HomeController::class, 'account_cart'])->name('account_cart');
-    Route::get('order/{id}', [HomeController::class, 'account_order_dital'])->name('account_order_dital');
 });
 
 
