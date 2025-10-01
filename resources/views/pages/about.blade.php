@@ -58,12 +58,12 @@
                     <h2>Đơn vị phát triển & phân phối <br> bất động sản hàng đầu</h2>
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide"><img src="assets/images/gioithieu/quymo-02.png"></div>
-                            <div class="swiper-slide"><img src="assets/images/gioithieu/quymo-03.png"></div>
-                            <div class="swiper-slide"><img src="assets/images/gioithieu/quymo-04.png"></div>
-                            <div class="swiper-slide"><img src="assets/images/gioithieu/quymo-05.png"></div>
-                            <div class="swiper-slide"><img src="assets/images/gioithieu/quymo-06.png"></div>
-                            <div class="swiper-slide"><img src="assets/images/gioithieu/quymo-07.png"></div>
+                            <div class="swiper-slide"><img src="assets/images/gioithieu/quy-mo-02.png"></div>
+                            <div class="swiper-slide"><img src="assets/images/gioithieu/quy-mo-03.png"></div>
+                            <div class="swiper-slide"><img src="assets/images/gioithieu/quy-mo-04.png"></div>
+                            <div class="swiper-slide"><img src="assets/images/gioithieu/quy-mo-05.png"></div>
+                            <div class="swiper-slide"><img src="assets/images/gioithieu/quy-mo-06.png"></div>
+                            <div class="swiper-slide"><img src="assets/images/gioithieu/quy-mo-07.png"></div>
                         </div>
                         <div class="swiper-pagination"></div>
                     </div>
